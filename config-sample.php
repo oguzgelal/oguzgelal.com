@@ -25,7 +25,11 @@ else {
 
 # PATH settings
 define("ROOT", "/");
-define("VIEWS", "frontend");
+define("VIEWS", ROOT."frontend/");
+define("TEMPLATES", VIEWS."templates/");
+define("THIRDPARTY", VIEWS."thirdparty/");
+define("LESS", VIEWS."less/");
+define("JS", VIEWS."js/");
 
 # DOMAIN Settings
 define("PREFIX", "http://");
