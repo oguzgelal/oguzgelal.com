@@ -6,7 +6,7 @@ This is the source codes of my website, *still under development*. Here are some
 
 - I used **Composer** as the dependency manager.
 - It uses **Slim Framework** for the backend and a **MySQL** database.
-- As for the frontend, **Less Css** and **jQuery** are used so far.
+- As for the frontend, **Less** and **jQuery** are used so far.
 
 Usage
 --------------------
