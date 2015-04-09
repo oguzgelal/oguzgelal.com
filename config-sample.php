@@ -25,7 +25,7 @@ else {
 
 # PATH settings
 define("ROOT", "/");
-define("VIEWS", ROOT."frontend/");
+define("VIEWS", "frontend/");
 define("TEMPLATES", VIEWS."templates/");
 define("THIRDPARTY", VIEWS."thirdparty/");
 define("LESS", VIEWS."less/");

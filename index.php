@@ -6,6 +6,8 @@ require 'config.php';
 // INSTANTIATE
 $app = new \Slim\Slim;
 
+error_log(TEMPLATES);
+
 // CONFIGURE
 $app->config(array(
 	'debug' => true,
@@ -23,6 +25,7 @@ $app->get('/', function() use ($app){
 	$app->render('base.php', array('page'=>'home'));
 });
 
-
+// RUN THE APP
+$app->run();
 
 
