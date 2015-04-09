@@ -2,6 +2,7 @@
 // REQUIRE 
 require 'vendor/autoload.php';
 require 'config.php';
+require 'dbinfo.php';
 
 // INSTANTIATE
 $app = new \Slim\Slim;
