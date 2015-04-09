@@ -1,8 +1,11 @@
-#server {
-#    listen 80;
-#    server_name www.oguzgelal.com;
-#    return 301 http://oguzgelal.com$request_uri;
-#}
+# nginx config file for oguzgelal.com
+
+# server {
+#     listen 80;
+#     server_name www.oguzgelal.com;
+#     return 301 http://oguzgelal.com$request_uri;
+# }
+
 server {
     listen 80;
     server_name new.oguzgelal.com;

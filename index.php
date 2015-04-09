@@ -7,8 +7,6 @@ require 'dbinfo.php';
 // INSTANTIATE
 $app = new \Slim\Slim;
 
-error_log(TEMPLATES);
-
 // CONFIGURE
 $app->config(array(
 	'debug' => true,
