@@ -21,7 +21,9 @@ $app->db = $pdo;
 
 // ROUTES
 $app->get('/', function() use ($app){
-	$app->render('base.php', array('page'=>'home'));
+	$app->render('base.php', array(
+		'page'=>'home'
+		));
 });
 
 // RUN THE APP
