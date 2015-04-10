@@ -1,5 +1,5 @@
 <?php
-/* Change to false while deploying to a server */
+/* Change to false while deploying to the server */
 define("LOCAL", false);
 
 session_name('oguzgelal');
