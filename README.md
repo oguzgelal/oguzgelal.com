@@ -16,3 +16,5 @@ If you want to use these codes as a boilerplate, **you are welcomed to**. I was 
 Database Configuration
 --------------------
 I use MAMP as a local server, which uses **apache**. And my webserver has LEMP stack installed so it uses **nginx**. So there are files for both configurations. You can use whichever you need.
+
+If you will use this codes, rename **dbinfo-sample.php** to **dbinfo.php** and enter your db info to the empty fields.
