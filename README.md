@@ -12,6 +12,8 @@ This is the source codes of my website, *still under development*. Here are some
 	*  <a href="http://lesscss.org/" target="_new">Less</a>
 	*  <a href="http://lessprefixer.com/" target="_new">Prefixer (Less plugin)</a>
 	*  <a href="http://daneden.github.io/animate.css/" target="_new">Animate.css</a> (renamed to animate.less in utils)
+	*  <a href="http://fortawesome.github.io/Font-Awesome/" target="_new">Font Awesome</a>
+	
 
 Usage
 --------------------
