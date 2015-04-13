@@ -4,7 +4,20 @@
 @import "utils/mixins";
 @import "utils/prefixer";
 
+body, html, * {
+	font-family: 'Ubuntu', sans-serif;
+}
 body, html {
 	margin: 0;
 	padding: 0;
+	background-color: @body-bg;
+	color: @text-primary;
 }
+a {
+	text-decoration: none;
+	color: @link;
+}
+a:hover { color: @link-hover; }
+
+@import "sidepanel/sidepanel";
+@import "pages/page";

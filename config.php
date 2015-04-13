@@ -1,6 +1,6 @@
 <?php
 /* Change to false while deploying to the server */
-define("LOCAL", false);
+define("LOCAL", true);
 
 session_name('oguzgelal');
 if(session_id() == ''){ session_start(); }
