@@ -1,26 +1,23 @@
 .sidepanel {
 	position: relative;
 	float: left;
-	background-color: @body-bg;
+	padding: 0;
+	margin: 0;
 	width: @sidepanel-width;
+	height: 100%;
 	@media @mobile-display {
 		width: @sidepanel-mobile-width;
 	}
+	background-color: @body-bg;
+	z-index: 999;
+	
 
 	.sidepanel-toggle {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		padding: 10px;
+		top: 10px;
+		left: 10px;
 		font-size: 18px;
 		text-align: left;
-		@media @mobile-display {
-			width: 100%;
-			padding: 0;
-			padding-top: 10px;
-			text-align: center;
-		}
 		i:hover {
 			cursor: pointer;
 			color: @link;
