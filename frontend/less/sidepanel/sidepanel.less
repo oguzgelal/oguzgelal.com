@@ -1,8 +1,77 @@
 .sidepanel {
-	
+	position: relative;
 	float: left;
-	background-color: @border-color;
+	background-color: @body-bg;
 	width: @sidepanel-width;
+	@media @mobile-display {
+		width: @sidepanel-mobile-width;
+	}
+
+	.sidepanel-toggle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+		font-size: 18px;
+		text-align: left;
+		@media @mobile-display {
+			width: 100%;
+			padding: 0;
+			padding-top: 10px;
+			text-align: center;
+		}
+		i:hover {
+			cursor: pointer;
+			color: @link;
+		}
+	}
+
 	height: 100%;
-	
+
+	.sidepanel-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-top: 60px;
+		font-size: 18px;
+		color: @text-secondary;
+		.sidepanel-small-hide {
+			@media @mobile-display {
+				display: none;
+			}
+		}
+		.sidepanel-item-icon {
+			width: 20px;
+			height: 20px;
+			font-size: 21px;
+			margin-right: 10px;
+			@media @mobile-display {
+				margin: 0;
+			}
+		}
+		.user-select(none);
+
+		li {
+			text-align: left;
+			a {
+				display: inline-block;
+				color: @text-secondary !important;
+				padding: 10px;
+				padding-left: 30px;
+				@media @mobile-display {
+					padding-left: 0;
+					padding: 10px;
+				}
+			}
+		}
+		li:hover {
+			cursor: pointer;
+			background-color: @item-bg;
+		}
+		li.active {
+			background-color: @item-bg;
+		}
+	}	
+
 }

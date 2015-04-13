@@ -5,7 +5,11 @@ define("LOCAL", false);
 session_name('oguzgelal');
 if(session_id() == ''){ session_start(); }
 
-# PATH settings
+# DB Related
+define("PDO_PARAM_INT", PDO::PARAM_INT);
+define("PDO_FETCH_ASSOC", PDO::FETCH_ASSOC);
+
+# PATH Settings
 define("ROOT", "/");
 define("VIEWS", "frontend/");
 define("TEMPLATES", VIEWS."templates/");

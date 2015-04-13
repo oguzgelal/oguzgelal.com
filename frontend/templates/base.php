@@ -2,6 +2,7 @@
 <head>
 	<title>Welcome</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."jquery/jquery-mig.js"; ?>"></script>
@@ -10,6 +11,8 @@
 	<script src="<?php echo THIRDPARTY."less.min.js"; ?>"></script>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
+	<!-- Scripts -->
+	<script src="<?php echo JS."general.js"; ?>"></script>
 </head>
 <body>
 	<?php
