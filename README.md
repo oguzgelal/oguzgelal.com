@@ -10,7 +10,7 @@ This is the source codes of my website, *still under development*. Here are some
 	*  *PHP (as a templating engine)*
 	*  <a href="http://jquery.com/" target="_new">jQuery</a>
 	*  <a href="http://lesscss.org/" target="_new">Less</a>
-	*  <a href="https://github.com/less/less-plugin-clean-css" target="_new">Less Minified CSS Plugin</a>
+	*  <a href="https://github.com/less/less-plugin-clean-css" target="_new">Less Minify CSS Plugin</a>
 	*  <a href="http://lessprefixer.com/" target="_new">Prefixer (Less plugin)</a>
 	*  <a href="http://daneden.github.io/animate.css/" target="_new">Animate.css</a> (renamed to animate.less in utils)
 	*  <a href="http://fortawesome.github.io/Font-Awesome/" target="_new">Font Awesome</a>
