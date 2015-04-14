@@ -16,6 +16,8 @@ define("TEMPLATES", VIEWS."templates/");
 define("THIRDPARTY", VIEWS."thirdparty/");
 define("LESS", VIEWS."less/");
 define("JS", VIEWS."js/");
+define("ASSETS", VIEWS."assets/");
+define("IMGS", ASSETS."img/");
 
 # DOMAIN Settings
 define("PREFIX", "http://");
