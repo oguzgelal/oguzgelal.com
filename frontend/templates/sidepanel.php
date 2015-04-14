@@ -1,7 +1,7 @@
 <div class="sidepanel">
 	
 	<div class="sidepanel-toggle">
-		<i class="fa fa-bars"></i>
+		<i class="fa fa-bars sidepanel-toggle-btn"></i>
 	</div>
 
 	<ul class="sidepanel-list">

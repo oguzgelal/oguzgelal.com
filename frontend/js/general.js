@@ -1,3 +1,6 @@
+var togglewidth = 800;
+var toggled = false;
+
 
 $(document).ready(function(){
 	
@@ -10,15 +13,37 @@ $(document).ready(function(){
 		delay(function(){ fitPageWithSidepanel(); }, 500);
 	});
 
+
+	$(document).on('click', '.sidepanel-toggle-btn', function(){
+		toggled = true;
+		sidepanelToggle();
+	});
+
 });
 
 
 var fitPageWithSidepanel = function(){
+	if (!toggled){
+		if ($(window).width() < togglewidth){ sidepanelMobile("on"); }
+		else{ sidepanelMobile("off"); }
+	}
 	var sidepanel = $('.sidepanel');
 	var page = $('.page');
 	var setWidth = $(window).width() - sidepanel.width();
 	page.width(setWidth);
 }
+
+var sidepanelMobile = function(condition){
+	if (condition=="on"){ $('.sidepanel').addClass('mobile'); }
+	else if (condition=="off"){ $('.sidepanel').removeClass('mobile'); }
+}
+
+var sidepanelToggle = function(){
+	if ($('.sidepanel').hasClass('mobile')){ sidepanelMobile("off"); }
+	else{ sidepanelMobile("on"); }
+	fitPageWithSidepanel();
+}
+
 
 var delay = (function(){
 	var timer = 0;

@@ -1,13 +1,12 @@
 .sidepanel {
+	.user-select(none);
+
 	position: relative;
 	float: left;
 	padding: 0;
 	margin: 0;
 	width: @sidepanel-width;
 	height: 100%;
-	@media @mobile-display {
-		width: @sidepanel-mobile-width;
-	}
 	background-color: @body-bg;
 	z-index: 999;
 	
@@ -33,19 +32,11 @@
 		margin-top: 60px;
 		font-size: 18px;
 		color: @text-secondary;
-		.sidepanel-small-hide {
-			@media @mobile-display {
-				display: none;
-			}
-		}
 		.sidepanel-item-icon {
 			width: 20px;
 			height: 20px;
 			font-size: 21px;
 			margin-right: 10px;
-			@media @mobile-display {
-				margin: 0;
-			}
 		}
 		.user-select(none);
 
@@ -56,10 +47,6 @@
 				color: @text-secondary !important;
 				padding: 10px;
 				padding-left: 30px;
-				@media @mobile-display {
-					padding-left: 0;
-					padding: 10px;
-				}
 			}
 		}
 		li:hover {
@@ -72,3 +59,28 @@
 	}	
 
 }
+
+
+
+.sidepanel.mobile {
+	
+	
+
+	width: @sidepanel-mobile-width;
+	.sidepanel-list {
+		.sidepanel-small-hide {
+			display: none;
+		}
+		.sidepanel-item-icon {
+			margin: 0;
+		}
+		li {
+			a {
+				padding-left: 0;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+
