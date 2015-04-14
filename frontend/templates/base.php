@@ -6,9 +6,16 @@
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."jquery/jquery-mig.js"; ?>"></script>
+	
+	<?php if (COMPILE_LESS){ ?>
 	<!-- Less & Styles -->
 	<link rel="stylesheet/less" type="text/css" href="<?php echo LESS."index.less"; ?>" />
-	<script src="<?php echo THIRDPARTY."less.min.js"; ?>"></script>
+	<script src="<?php echo THIRDPARTY."less.min.js"; ?>"></script>		
+	<?php } else{ ?>
+	<!-- Precompiled Less -->
+	<link rel="stylesheet" href="<?php echo STYLE."style.min.css"; ?>">
+	<?php } ?>
+	
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
 	<!-- Scripts -->

@@ -1,6 +1,9 @@
 <?php
-/* Change to false while deploying to the server */
+# Change to false while deploying to the server
 define("LOCAL", false);
+# True compiles less on the fly.
+# False loads the pre-compiled css at /frontend/assets/style/style.min.css
+define("COMPILE_LESS", false);
 
 session_name('oguzgelal');
 if(session_id() == ''){ session_start(); }
@@ -18,6 +21,7 @@ define("LESS", VIEWS."less/");
 define("JS", VIEWS."js/");
 define("ASSETS", VIEWS."assets/");
 define("IMGS", ASSETS."img/");
+define("STYLE", ASSETS."style/");
 
 # DOMAIN Settings
 define("PREFIX", "http://");
