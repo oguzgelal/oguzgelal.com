@@ -3,11 +3,11 @@ $(document).ready(function(){
 	
 	fitPageWithSidepanel();
 	// workaround to fix the race condition on safari
-	setTimeout(function(){ fitPageWithSidepanel(); },100);
+	setTimeout(function(){ fitPageWithSidepanel(); },500);
 	$(window).on("resize", function(){
 		fitPageWithSidepanel();
 		// workaround for safari window resize timing issue
-		delay(function(){ fitPageWithSidepanel(); }, 100);
+		delay(function(){ fitPageWithSidepanel(); }, 500);
 	});
 
 });
