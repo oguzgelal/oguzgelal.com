@@ -23,12 +23,16 @@ If you want to use these codes as a boilerplate, **you are welcomed to**. I was 
 
 Other than that, you'll need to pre-compile less so you need node to be installed. Then, you install less compiler and css min plugin.
 
-``` sudo npm install -g less ```
-``` sudo npm install -g less-plugin-clean-css ```
+```bash
+sudo npm install -g less
+sudo npm install -g less-plugin-clean-css
+```
 
 Then, you can compile the less with the following command:
 
-``` lessc --clean-css="--s1 --advanced --compatibility=ie8" frontend/less/index.less > frontend/assets/style/style.min.css ```
+```bash
+lessc --clean-css="--s1 --advanced --compatibility=ie8" frontend/less/index.less > frontend/assets/style/style.min.css
+```
 
 Instead of running this every time, you can create your own bash file (just as I did deploy.sh) and automate some command-line tasks.
 
