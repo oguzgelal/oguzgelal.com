@@ -21,8 +21,11 @@
 	if (!isset($this->data["sidepanel"]) || (isset($this->data["sidepanel"]) && !$this->data["sidepanel"])){
 		include "sidepanel.php";
 	}
+
+	// Load Page Contents
 	if (isset($this->data["page"])){
 		if ($this->data["page"]=="home"){ include "home.php"; }
+		else if ($this->data["page"]=="portfolio"){ include "portfolio.php"; }
 	}
 
 	?>

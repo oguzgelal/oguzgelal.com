@@ -25,6 +25,11 @@ $app->get('/', function() use ($app){
 		'page'=>'home'
 		));
 });
+$app->get('/portfolio', function() use ($app){
+	$app->render('base.php', array(
+		'page'=>'portfolio'
+		));
+});
 
 // RUN THE APP
 $app->run();
