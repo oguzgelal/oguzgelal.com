@@ -30,6 +30,27 @@ $app->get('/portfolio', function() use ($app){
 		'page'=>'portfolio'
 		));
 });
+$app->get('/cv', function() use ($app){
+	$app->render('base.php', array(
+		'page'=>'resume'
+		));
+});
+$app->get('/blog', function() use ($app){
+	$app->render('base.php', array(
+		'page'=>'blog'
+		));
+});
+$app->get('/contact', function() use ($app){
+	$app->render('base.php', array(
+		'page'=>'contact'
+		));
+});
+
+$app->notFound(function() use ($app){
+	$app->render('base.php', array(
+		'page'=>'notfound'
+		));
+});
 
 // RUN THE APP
 $app->run();
