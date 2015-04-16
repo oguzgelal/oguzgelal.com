@@ -15,10 +15,12 @@
 	<!-- Precompiled Less -->
 	<link rel="stylesheet" href="<?php echo STYLE."style.min.css"; ?>">
 	<?php } ?>
-	
-	<!-- Font Awesome -->
+	<!-- Thirdparty -->
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
+	<link rel="stylesheet" href="<?php echo THIRDPARTY."powertip/css/jquery.powertip.min.css"; ?>">
+	<script src="<?php echo THIRDPARTY."powertip/jquery.powertip.min.js"; ?>"></script>
 	<!-- Scripts -->
+	<script src="<?php echo JS."general.js"; ?>"></script>
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
 	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
 </head>

@@ -1,8 +1,8 @@
 .homepage {
 	text-align: center;
 	.homepage-wrapper {
-		
-		padding: 10px 150px;
+		max-width: 1200px;
+		padding: 10px 110px;
 		@media @tablet-display { padding: 10px 80px; }
 		@media @mobile-display { padding: 10px 30px; }
 		margin: auto;
@@ -12,10 +12,14 @@
 			margin-top: 20px;
 		}
 		.homepage-row:first-of-type {
-			margin-top: 50px;
+			margin-top: 30px;
+			@media @tablet-display { margin-top: 30px; }
+			@media @mobile-display { margin-top: 20px; }
 		}
 		.homepage-row:last-of-type {
 			margin-bottom: 50px;
+			@media @tablet-display { margin-top: 30px; }
+			@media @mobile-display { margin-top: 20px; }
 		}
 
 		.homepage-avatar {
@@ -39,17 +43,15 @@
 			}
 		}
 		.homepage-title {
-			font-size: 40px;
-			@media @mobile-display {
-				font-size: 24px;
-			}
+			font-size: 44px;
+			@media @tablet-display { font-size: 34px; }
+			@media @mobile-display { font-size: 24px; }
 		}
 		.homepage-desc {
 			margin-top: 5px;
-			font-size: 22px;
-			@media @mobile-display {
-				font-size: 17px;
-			}
+			font-size: 24px;
+			@media @tablet-display { font-size: 20px; }
+			@media @mobile-display { font-size: 18px; }
 		}
 	}
 }
