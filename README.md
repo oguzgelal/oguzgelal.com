@@ -65,8 +65,11 @@ define("COMPILE_LESS", false);
  Now you are ready to deploy the codes to any server.
 
 
-Database Configuration
+Server Configuration
 --------------------
 I use MAMP as a local server, which uses **apache**. And my webserver has LEMP stack installed so it uses **nginx**. So there are files for both configurations. You can use whichever you need.
 
+
+Database Configuration
+--------------------
 Before usage, rename **dbinfo-sample.php** to **dbinfo.php** and fill in the fields with your database information.
