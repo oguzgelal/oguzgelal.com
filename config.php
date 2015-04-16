@@ -1,9 +1,9 @@
 <?php
 # Change to false while deploying to the server
-define("LOCAL", false);
+define("LOCAL", true);
 # True compiles less on the fly.
 # False loads the pre-compiled css at /frontend/assets/style/style.min.css
-define("COMPILE_LESS", false);
+define("COMPILE_LESS", true);
 
 session_name('oguzgelal');
 if(session_id() == ''){ session_start(); }

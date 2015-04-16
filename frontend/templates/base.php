@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
 	<!-- Scripts -->
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
+	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
 </head>
 <body>
 	<?php
