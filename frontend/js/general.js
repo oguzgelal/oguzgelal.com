@@ -1,5 +1,10 @@
 $(document).ready(function(){
-	$('.tooltip').powerTip({
+	// general tooltip
+	$('.tooltip').powerTip({ fadeInTime: 0 });
+
+	// linkedin tooltip
+	$('.sidepanel-item-li').powerTip({
+		placement: 'e',
 		fadeInTime: 0
 	});
 });

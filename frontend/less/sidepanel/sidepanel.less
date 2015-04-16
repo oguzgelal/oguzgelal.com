@@ -1,7 +1,8 @@
 .sidepanel {
 	position: relative;
 	float: left;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	padding: 0;
 	margin: 0;
 	width: @sidepanel-width;
@@ -21,13 +22,21 @@
 		}
 	}
 
-	height: 100%;
+	.sidepanel-divider {
+		border: none;
+		border-bottom: 1px solid lightgray;
+		width: 70%;
+		@media @mobile-display { width: 100%; }
+		margin-bottom: 0 !important;
+		margin-top: 25px;
+	}
+
+	
 
 	.sidepanel-list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		margin-top: 60px;
 		font-size: 18px;
 		color: @text-secondary;
 		
@@ -56,7 +65,50 @@
 		li.active {
 			background-color: @item-bg;
 		}
-	}	
+
+		.sidepanel-item-gh {
+			a {color: @github !important;}
+		}
+		.sidepanel-item-fb {
+			a {color: @facebook !important;}
+		}
+		.sidepanel-item-tw {
+			a {color: @twitter !important;}
+		}
+		.sidepanel-item-gp {
+			a {color: @youtube !important;}
+		}
+		.sidepanel-item-li {
+			a {color: @linkedin !important;}
+		}
+		.sidepanel-item-gh:hover {
+			background-color: @github;
+			a { color: white !important; }
+		}
+		.sidepanel-item-fb:hover {
+			background-color: @facebook;
+			a { color: white !important; }
+		}
+		.sidepanel-item-tw:hover {
+			background-color: @twitter;
+			a { color: white !important; }
+		}
+		.sidepanel-item-gp:hover {
+			background-color: @youtube;
+			a { color: white !important; }
+		}
+		.sidepanel-item-li:hover {
+			background-color: @linkedin;
+			a { color: white !important; }
+		}
+
+	}
+	.sidepanel-list:first-of-type {
+		margin-top: 60px;
+	}
+	.sidepanel-list:last-child {
+		margin-bottom: 30px;
+	}
 
 }
 
