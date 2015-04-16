@@ -3,7 +3,13 @@ var toggled = false;
 
 
 $(document).ready(function(){
-	
+
+	// for hiding scrollbar on sidepanel
+	resizeSidebarHeight();
+	setTimeout(function(){ resizeSidebarHeight(); },1000);
+	$(window).on("resize", function(){ resizeSidebarHeight(); });
+
+
 	fitPageWithSidepanel();
 	// workaround to fix the race condition on safari
 	setTimeout(function(){ fitPageWithSidepanel(); },500);
@@ -52,3 +58,9 @@ var delay = (function(){
 		timer = setTimeout(callback, ms);
 	};
 })();
+
+var resizeSidebarHeight = function(){
+	console.log("set to "+$(window).height());
+	$('.sidepanel').height($(window).height());
+	$('.sidepanel-elems').height($(window).height());
+}
