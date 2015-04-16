@@ -60,7 +60,8 @@ var delay = (function(){
 })();
 
 var resizeSidebarHeight = function(){
-	console.log("set to "+$(window).height());
-	$('.sidepanel').height($(window).height());
-	$('.sidepanel-elems').height($(window).height());
+	console.log("set to "+$('.page').height());
+	$('.sidepanel').height($('.page').height());
+	$('.sidepanel-elems').height($('.page').height());
 }
+
