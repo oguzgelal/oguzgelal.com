@@ -17,10 +17,12 @@ This is the source codes of my website, *still under development*. Here are some
 	*  <a href="http://stevenbenner.github.io/jquery-powertip/" target="_new">PowerTip</a> (Lightweight plugin for Tooltips)
 	
 
-Usage
+Want to use the codes ?
 --------------------
 
-If you want to use these codes as a boilerplate, **you are welcomed to**. I was too lazy to install composer on my server so I just included all the dependencies here on GitHub. When you clone the repo, it should simply work. But if you have composer installed, a ``` sudo composer update ``` is adviced.
+**If you want to use these codes as a boilerplate, you are welcomed to**.
+
+I was too lazy to install composer on my server so I just included all the dependencies here on GitHub. When you clone the repo, it should simply work. But if you have composer installed, a ``` sudo composer update ``` is adviced.
 
 Other than that, you'll need to pre-compile less so you need node to be installed. Then, you install less compiler and css min plugin.
 
@@ -29,13 +31,39 @@ sudo npm install -g less
 sudo npm install -g less-plugin-clean-css
 ```
 
-Then, you can compile the less with the following command:
+Then, you can compile less with the following command:
 
 ```bash
 lessc --clean-css="--s1 --advanced --compatibility=ie8" frontend/less/index.less > frontend/assets/style/style.min.css
 ```
 
-Instead of running this every time, you can create your own bash file (just as I did deploy.sh) and automate some command-line tasks.
+Instead of typing this every time, you better use the **lessc.sh** bash file that I created.
+
+Before Deploying
+------------
+First, compile the less with the following command:
+
+```bash
+./lessc.sh
+```
+
+Then change *config.php*:
+
+```php
+define("LOCAL", true);
+define("COMPILE_LESS", true);
+```
+
+to
+
+```php
+define("LOCAL", false);
+define("COMPILE_LESS", false);
+```
+
+
+ Now you are ready to deploy the codes to any server.
+
 
 Database Configuration
 --------------------

@@ -25,6 +25,6 @@ define("STYLE", ASSETS."style/");
 
 # DOMAIN Settings
 define("PREFIX", "http://");
-if ($local){ define( "DOMAIN", "localhost:8888" ); }
+if (LOCAL){ define( "DOMAIN", "localhost:8888" ); }
 else{ define( "DOMAIN", "oguzgelal.com" ); }
 
