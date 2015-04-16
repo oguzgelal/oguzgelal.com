@@ -24,7 +24,7 @@ Want to use the codes ?
 
 I was too lazy to install composer on my server so I just included all the dependencies here on GitHub. When you clone the repo, it should simply work. But if you have composer installed, a ``` sudo composer update ``` is recommended.
 
-Other than that, you'll need to pre-compile less so you need node to be installed. Then, you install less compiler and css min plugin.
+Other than that, you'll need to pre-compile less so you need **nodejs** (npm) to be installed. Then, you install less compiler and css min plugin.
 
 ```bash
 sudo npm install -g less
