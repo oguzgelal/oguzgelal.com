@@ -6,7 +6,7 @@
 				<i class="fa fa-bars sidepanel-toggle-btn"></i>
 			</div>
 
-			<ul class="sidepanel-list" style="margin-top: 60px;">
+			<ul class="sidepanel-list" style="margin-top: 40px;">
 
 				<?php
 				$pagesObj = new \Resource\Pages;
@@ -65,7 +65,7 @@
 						<span class="sidepanel-small-hide">LinkedIn</span>
 					</a>
 				</li>
-				
+
 			</ul>
 			
 			<hr class="sidepanel-divider">
