@@ -2,7 +2,7 @@
 	<div class="portfolio-wrapper">
 		
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -23,7 +23,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -44,7 +44,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -65,7 +65,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -86,7 +86,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -107,7 +107,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -128,7 +128,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
@@ -149,7 +149,7 @@
 		<hr class="portfolio-divider">
 
 		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."photo.jpg" ?>" alt="Dummy"></div>
+			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
 			<div class="portfolio-box-content">
 				<div class="portfolio-box-title">Social Web</div>
 				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>

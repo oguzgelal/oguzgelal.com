@@ -19,6 +19,8 @@ var enterPortfolio = function(){
 	for(var i = 0; i < enterElems.length; i++){
 		$(enterElems[i]).css("animation-delay", "."+i+"s");
 		$(enterElems[i]).css("-webkit-animation-delay", "."+i+"s");
-		$(enterElems[i]).addClass('animated flipInX');
+		if ($(window).width() > 800){ $(enterElems[i]).addClass('animated flipInX'); }
+		else{ $(enterElems[i]).addClass('animated bounceInLeft'); }
+		
 	}
 }

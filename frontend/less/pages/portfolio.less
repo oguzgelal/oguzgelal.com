@@ -40,20 +40,19 @@
 				display: inline-block;
 				float: left;
 				width: 30%;
-				max-height: 175px;
+				//max-height: 175px;
 				max-width: @portfolio-vis-maxwidth;
 				overflow: hidden;
 				text-align: center;
-				.border-radius(5px);
 				@media @tablet-display { width: 45%; }
 				@media @mobile-display {
 					max-width: 100%;
 					width: 100%;
 					height: auto;
-					max-height: 200px;
 					margin: auto;
 				}
 				img {
+					.border-radius(5px);
 					max-width: @portfolio-vis-maxwidth;
 					width: 100%;
 					height: auto;
@@ -140,6 +139,7 @@
 					.portfolio-box-button {
 						color: @text-secondary;
 						margin-right: 5px;
+						margin-bottom: 5px;
 						.border-radius(5px);
 						display: inline-block;
 						padding: 5px;
