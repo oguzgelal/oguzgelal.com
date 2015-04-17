@@ -67,8 +67,6 @@
 				</li>
 
 			</ul>
-			
-			<hr class="sidepanel-divider">
 
 		</div>
 	</div>

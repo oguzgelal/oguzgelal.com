@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	enterBounce();
+	enterPortfolio();
 });
 
 var enterBounce = function(){
@@ -9,5 +10,15 @@ var enterBounce = function(){
 		$(enterElems[i]).css("animation-delay", "."+i+"s");
 		$(enterElems[i]).css("-webkit-animation-delay", "."+i+"s");
 		$(enterElems[i]).addClass('animated bounceIn');
+	}
+}
+
+var enterPortfolio = function(){
+	var delay = 100;
+	var enterElems = $('.fancy-enter-portfolio');
+	for(var i = 0; i < enterElems.length; i++){
+		$(enterElems[i]).css("animation-delay", "."+i+"s");
+		$(enterElems[i]).css("-webkit-animation-delay", "."+i+"s");
+		$(enterElems[i]).addClass('animated flipInX');
 	}
 }
