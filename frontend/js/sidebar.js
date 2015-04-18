@@ -4,6 +4,9 @@ var toggled = false;
 
 $(document).ready(function(){
 
+	// for fixing issue on mobile where the page contents appears when scrolled down
+	$(window).on("resize", function(){ hidePageWhenCondensed();	});
+
 	// for hiding scrollbar on sidepanel
 	resizeSidebarHeight();
 	setTimeout(function(){ resizeSidebarHeight(); },1000);
@@ -27,6 +30,13 @@ $(document).ready(function(){
 
 });
 
+var hidePageWhenCondensed = function(){
+	var hideMinWidth = 200;
+	var windowWidth = $(window).width();
+	var sidebarWidth = $('.sidepanel').width();
+	if (windowWidth-sidebarWidth < hideMinWidth){ $('.page').hide(); }
+	else{ $('.page').show(); }
+};
 
 var fitPageWithSidepanel = function(){
 	if (!toggled){
@@ -37,18 +47,19 @@ var fitPageWithSidepanel = function(){
 	var page = $('.page');
 	var setWidth = $(window).width() - sidepanel.width();
 	page.width(setWidth);
-}
+};
 
 var sidepanelMobile = function(condition){
 	if (condition=="on"){ $('.sidepanel').addClass('mobile'); }
 	else if (condition=="off"){ $('.sidepanel').removeClass('mobile'); }
-}
+	hidePageWhenCondensed();
+};
 
 var sidepanelToggle = function(){
 	if ($('.sidepanel').hasClass('mobile')){ sidepanelMobile("off"); }
 	else{ sidepanelMobile("on"); }
 	fitPageWithSidepanel();
-}
+};
 
 
 var delay = (function(){
@@ -63,5 +74,5 @@ var resizeSidebarHeight = function(){
 	console.log("set to "+$('.page').height());
 	$('.sidepanel').height($('.page').height());
 	$('.sidepanel-elems').height($('.page').height());
-}
+};
 
