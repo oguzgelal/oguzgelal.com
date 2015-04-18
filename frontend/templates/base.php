@@ -28,7 +28,7 @@
 	<?php
 
 	// Handle sidepanel
-	if (!isset($this->data["sidepanel"]) || (isset($this->data["sidepanel"]) && !$this->data["sidepanel"])){
+	if (!isset($this->data["sidepanel"]) || (isset($this->data["sidepanel"]) && $this->data["sidepanel"])){
 		include "sidepanel.php";
 	}
 

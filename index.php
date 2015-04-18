@@ -37,7 +37,8 @@ $app->get('/cv', function() use ($app){
 });
 $app->get('/blog', function() use ($app){
 	$app->render('base.php', array(
-		'page'=>'blog'
+		'page'=>'blog',
+		'sidepanel_small'=>true
 		));
 });
 $app->get('/contact', function() use ($app){

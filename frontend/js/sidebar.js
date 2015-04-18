@@ -1,4 +1,6 @@
 var togglewidth = 800;
+
+// After user toggles the sidepanel, the autotoggle should switch off untill page reload.
 var toggled = false;
 
 
@@ -39,7 +41,7 @@ var hidePageWhenCondensed = function(){
 };
 
 var fitPageWithSidepanel = function(){
-	if (!toggled){
+	if (!toggled && !$('.sidepanel').hasClass('default_mobile')){
 		if ($(window).width() < togglewidth){ sidepanelMobile("on"); }
 		else{ sidepanelMobile("off"); }
 	}

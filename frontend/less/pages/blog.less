@@ -1,25 +1,35 @@
 .blog {
-	text-align: center;
 	.blog-wrapper {
 		
-		padding: 10px 30px;
-		margin: auto;
-
-		.blog-row {
+		.blog-post {
+			position: relative;
 			width: 100%;
-			margin-top: 20px;
-		}
-		.blog-row:first-of-type {
-			margin-top: 50px;
-		}
-		.blog-row:last-of-type {
-			margin-bottom: 50px;
-		}
+			height: 150px;
+			overflow: hidden;
+			border-top: 1px solid @border-color;
 
-		.blog-title {
-			font-size: 40px;
-			@media @mobile-display {
-				font-size: 24px;
+			.blog-post-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				img {
+					.transition(all 0.5s ease);
+					width: 100%;
+					height: auto;
+					margin-top: -50%;
+					-webkit-filter: blur(2px) grayscale(100%);
+					filter: blur(2px) grayscale(100%);
+				}
+			}
+			.blog-post-img:hover {
+				cursor: pointer;
+				img {
+					.transition(all 0.5s ease);
+					-webkit-filter: blur(0) grayscale(0);
+					filter: blur(0) grayscale(0);
+				}
 			}
 		}
 		
