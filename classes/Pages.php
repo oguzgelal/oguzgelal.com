@@ -8,7 +8,7 @@ class Pages {
 	/* Class Vars */
 	private $app;
 
-	function __construct(){ 
+	function __construct(){
 		$this->app = \Slim\Slim::getInstance();
 	}
 
@@ -20,11 +20,11 @@ class Pages {
 		$query = \Resource\Utils::querydb($this->app->db, $sql, $ins);
 		$pages = $query->fetchAll(PDO_FETCH_ASSOC);
 		if (count($pages)>0){ return $pages; }
-		else { return null; }	
+		else { return null; }
 	}
 
 	// no need for these right now
-	/* 
+	/*
 	function post(){
 		// check variables
 		if ($this->title && $this->path && \Resource\Utils::isAdminLoggedIn()){
@@ -67,7 +67,7 @@ class Pages {
 			$query = Utils::querydb($this->app->db, $sql, $ins);
 			if ($query){ return true; }
 			else{ throw new Exception("Comic update failed."); }
-		}	
+		}
 	}
 
 	function delete(){
