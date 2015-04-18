@@ -63,7 +63,7 @@ if ($this->data['sidepanel_small']){ $ismobile="mobile default_mobile"; }
 						<span class="sidepanel-small-hide">Google+</span>
 					</a>
 				</li>
-				<li class="sidepanel-item" title="I'm not a very active LinkedIn user !">
+				<li class="sidepanel-item sidepanel-item-li" title="I'm not a very active LinkedIn user !">
 					<a href="http://tr.linkedin.com/in/oguzgelal" target="_new">
 						<i class="fa fa-linkedin-square sidepanel-item-icon"></i>
 						<span class="sidepanel-small-hide">LinkedIn</span>
