@@ -26,10 +26,10 @@
 					<div class="portfolio-box-buttons">
 						<?php
 						if (isset($portfolio["github_link"])){
-							?><a href="<?php echo $portfolio["github_link"]; ?>" target="_new" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a><?php
+							?><a href="<?php echo $portfolio["github_link"]; ?>" target="_new"><div class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</div></a><?php
 						}
 						if (isset($portfolio["other_link"])){
-							?><a href="<?php echo $portfolio["other_link"]; ?>" target="_new" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a><?php
+							?><a href="<?php echo $portfolio["other_link"]; ?>" target="_new"><div class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</div></a><?php
 						}
 						?>
 					</div>
