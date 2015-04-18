@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2015 at 06:06 PM
+-- Generation Time: Apr 18, 2015 at 06:09 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -13,6 +13,34 @@ SET time_zone = "+00:00";
 --
 -- Database: `oguzgelal`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+CREATE TABLE `pages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `icon` text NOT NULL,
+  `alias` text NOT NULL,
+  `text` text NOT NULL,
+  `url` text NOT NULL,
+  `target` text NOT NULL,
+  `active` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `icon`, `alias`, `text`, `url`, `target`, `active`) VALUES
+(1, 'fa-home', 'home', 'Homepage', '/', '_self', 1),
+(2, 'fa-file-code-o', 'portfolio', 'Portfolio', '/portfolio', '_self', 1),
+(3, 'fa-pencil-square', 'blog', 'Blog', '/blog', '_self', 1),
+(4, 'fa-file-text-o', 'resume', 'Resume', '/cv', '_self', 1),
+(5, 'fa-envelope', 'contact', 'Contact', '/contact', '_self', 1);
 
 -- --------------------------------------------------------
 
