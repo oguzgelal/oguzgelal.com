@@ -1,173 +1,46 @@
 <div class="page portfolio">
 	<div class="portfolio-wrapper">
 		
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
+		<?php
+		$portfolioObj = new \Resource\Portfolio;
+		$portfolios = $portfolioObj->get();
 
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
+		for($i=0; $i<count($portfolios); $i++){
+			$portfolio = $portfolios[$i];
+			?>
+			<div class="portfolio-box clearfix fancy-enter-portfolio">
+				<div class="portfolio-box-vis"><img src="<?php echo PORTFOLIO.$portfolio["image"]; ?>" alt="Dummy"></div>
+				<div class="portfolio-box-content">
+					<div class="portfolio-box-title"><?php echo $portfolio["title"]; ?></div>
+					<div class="portfolio-box-desc"><?php echo $portfolio["desc"]; ?></div>
+					<div class="portfolio-box-tagcloud">
+						<ul class="portfolio-box-taglist">
+							<?php
+							$tagcloud = explode(",", $portfolio["builtwith"]);
+							for($j=0; $j<count($tagcloud); $j++){
+								?><li class="portfolio-box-tag"><?php echo $tagcloud[$j]; ?></li><?php
+							}
+							?>
+						</ul>
+					</div>
+					<div class="portfolio-box-buttons">
+						<?php
+						if (isset($portfolio["github_link"])){
+							?><a href="<?php echo $portfolio["github_link"]; ?>" target="_new" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a><?php
+						}
+						if (isset($portfolio["other_link"])){
+							?><a href="<?php echo $portfolio["other_link"]; ?>" target="_new" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a><?php
+						}
+						?>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
-
-		<div class="portfolio-box clearfix fancy-enter-portfolio">
-			<div class="portfolio-box-vis"><img src="<?php echo IMGS."default.jpg" ?>" alt="Dummy"></div>
-			<div class="portfolio-box-content">
-				<div class="portfolio-box-title">Social Web</div>
-				<div class="portfolio-box-desc">This extension lets you have an instant chat with the people that are viewing the same page. I app is my senior project.</div>
-				<div class="portfolio-box-tagcloud">
-					<ul class="portfolio-box-taglist">
-						<li class="portfolio-box-tag">NodeJS</li>
-						<li class="portfolio-box-tag">MeteorJS</li>
-						<li class="portfolio-box-tag">MongoDB</li>
-						<li class="portfolio-box-tag">Chrome Extension</li>
-					</ul>
-				</div>
-				<div class="portfolio-box-buttons">
-					<a href="#" class="portfolio-box-button gh"><i class="fa fa-github" style="margin-left: 3px;"></i> View on GitHub</a>
-					<a href="#" class="portfolio-box-button default"><i class="fa fa-link" style="margin-left: 3px;"></i> Visit Link</a>
-				</div>
-			</div>
-		</div>
-		<hr class="portfolio-divider">
+			<?php
+			if ($i != count($portfolios)-1){
+				?><hr class="portfolio-divider"><?php
+			}
+		}		
+		?>
 
 		
 	</div>
