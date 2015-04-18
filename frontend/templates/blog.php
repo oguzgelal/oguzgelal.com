@@ -3,37 +3,37 @@
 		
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/people" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/people" alt="Dummy">
 			</div>
 		</div>
 
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/abstract" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/abstract" alt="Dummy">
 			</div>
 		</div>
 
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/city" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/city" alt="Dummy">
 			</div>
 		</div>
 
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/animals" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/animals" alt="Dummy">
 			</div>
 		</div>
 
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/nature" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/nature" alt="Dummy">
 			</div>
 		</div>
 
 		<div class="blog-post">
 			<div class="blog-post-img">
-				<img src="http://lorempixel.com/1000/1000/sports" alt="Dummy">
+				<img src="http://lorempixel.com/1920/1920/sports" alt="Dummy">
 			</div>
 		</div>
 

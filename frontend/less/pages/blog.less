@@ -15,20 +15,24 @@
 				width: 100%;
 				height: 100%;
 				img {
-					.transition(all 0.5s ease);
-					width: 100%;
+					.transition(all .1s ease);
+					width: 106%;
 					height: auto;
 					margin-top: -50%;
-					-webkit-filter: blur(2px) grayscale(100%);
-					filter: blur(2px) grayscale(100%);
+					margin-left: -3%;
+					-webkit-filter: grayscale(100%);
+					filter: grayscale(100%);
 				}
 			}
 			.blog-post-img:hover {
 				cursor: pointer;
 				img {
-					.transition(all 0.5s ease);
-					-webkit-filter: blur(0) grayscale(0);
-					filter: blur(0) grayscale(0);
+					width: 100%;
+					margin-top: -47%;
+					margin-left: 0;
+					.transition(all .1s ease);
+					-webkit-filter: grayscale(0);
+					filter: grayscale(0);
 				}
 			}
 		}
