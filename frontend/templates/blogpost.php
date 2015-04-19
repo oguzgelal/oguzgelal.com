@@ -26,6 +26,9 @@ else {
 		<div class="blogpost-row blogpost-infotiles" style="margin-top: 30px;">
 			<?php echo $post["content"]; ?>
 		</div>
+		<div class="blogpost-row" style="margin-top: 30px;">
+			<div class="addthis_sharing_toolbox"></div>
+		</div>
 		<div class="blogpost-row">
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">

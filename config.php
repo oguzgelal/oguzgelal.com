@@ -29,5 +29,5 @@ define("STYLE", ASSETS."style/");
 # DOMAIN Settings
 define("PREFIX", "http://");
 if (LOCAL){ define( "DOMAIN", "localhost:8888" ); }
-else{ define( "DOMAIN", "new.oguzgelal.com" ); }
+else{ define( "DOMAIN", "oguzgelal.com" ); }
 
