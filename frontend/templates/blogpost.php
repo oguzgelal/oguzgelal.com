@@ -24,12 +24,12 @@ else {
 		<div class="blogpost-row blogpost-infotiles" style="margin-top: 30px;">
 			<?php echo $post["content"]; ?>
 		</div>
-		<div class="blogpost-row" style="margin-top: 30px;">
+		<div class="blogpost-row">
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = 'oguzgelal';
-			var disqus_title = <?php echo $post["title"]; ?>
+			var disqus_title = '<?php echo $post["title"]; ?>';
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {
