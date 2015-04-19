@@ -15,6 +15,8 @@ else {
 	$readableTime = date("M jS, Y", $timestamp);
 }
 ?>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5533f00f0f647afd" async="async"></script>
+
 <div class="page blogpost">
 	<div class="blogpost-cover" style="background-image: url(<?php echo BLOG.$post["cover"]; ?>); background-size: auto auto; background-position: center;;">
 		<div class="blogpost-posttime"><i class="fa fa-calendar-o"></i> <?php echo $readableTime; ?></div>

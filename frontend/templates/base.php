@@ -1,8 +1,11 @@
 <html>
 <head>
-	<title>Welcome</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<?php
+	if ($this->data["page"]=="blogpost"){ include "blogpost_head.php"; }
+	else { ?><title>Oguz Gelal | Personal Website & Blog</title><?php }
+	?>
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."jquery/jquery-mig.js"; ?>"></script>
