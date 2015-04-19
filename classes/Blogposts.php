@@ -22,7 +22,7 @@ class Blogposts {
 			$sql .= " WHERE id=:id";
 			$ins["id"] = intval($this->id);
 		}
-		$sql .= " ORDER BY posttime ASC";
+		$sql .= " ORDER BY posttime DESC";
 		// query db
 		$query = \Resource\Utils::querydb($this->app->db, $sql, $ins);
 		$pages = $query->fetchAll(PDO_FETCH_ASSOC);
