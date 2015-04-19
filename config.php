@@ -22,6 +22,8 @@ define("JS", VIEWS."js/");
 define("ASSETS", VIEWS."assets/");
 define("IMGS", ASSETS."img/");
 define("PORTFOLIO", IMGS."portfolio/");
+define("FLAGS", IMGS."flags/");
+define("BLOG", IMGS."blog/");
 define("STYLE", ASSETS."style/");
 
 # DOMAIN Settings

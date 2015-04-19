@@ -1,7 +1,16 @@
 .blog {
+	background-color: black;
 	.blog-wrapper {
-		
+
 		.blog-post {
+
+			background-image: -ms-linear-gradient(bottom, #000000 0%, #383838 100%);
+			background-image: -moz-linear-gradient(bottom, #000000 0%, #383838 100%);
+			background-image: -o-linear-gradient(bottom, #000000 0%, #383838 100%);
+			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #383838));
+			background-image: -webkit-linear-gradient(bottom, #000000 0%, #383838 100%);
+			background-image: linear-gradient(to top, #000000 0%, #383838 100%);
+
 			position: relative;
 			width: 100%;
 			height: @blog-post-height;
@@ -10,13 +19,13 @@
 			overflow: hidden;
 			border-top: 1px solid rgba(0,0,0,.6);
 
-			.blog-post-img {
+			.blog-post-hover {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
 				height: 100%;
-				img {
+				img.blog-post-bgimg {
 					.transition(all .5s ease);
 					width: 100%;
 					height: auto;
@@ -26,9 +35,9 @@
 				}
 				z-index: 9;
 			}
-			.blog-post-img:hover {
+			.blog-post-hover:hover {
 				cursor: pointer;
-				img {
+				img.blog-post-bgimg {
 					width: 100%;
 					.transition(all .5s ease);
 					-webkit-filter: opacity(1) grayscale(0);
@@ -37,7 +46,6 @@
 			}
 
 			.blog-post-title {
-				@blog-post-title-height: 100px;
 				position: absolute;
 				top: (@blog-post-height / 2) - (@blog-post-title-height / 2);
 				@media @tablet-display { top: (@blog-post-height-tablet / 2) - (@blog-post-title-height / 2); }
@@ -62,6 +70,30 @@
 				vertical-align: middle;
 				
 				z-index: 99;
+			}
+			.blog-post-lang {
+				@blog-post-lang-height: 10px;
+				@overlap-margin: 5px;
+				@overlap-margin-tablet: 8px;
+				@overlap-margin-mobile: 12px;
+				position: absolute;
+				top: (@blog-post-height / 2) - (@blog-post-lang-height / 2) - @blog-post-title-height + @overlap-margin;
+				@media @tablet-display { top: (@blog-post-height-tablet / 2) - (@blog-post-lang-height / 2) - @blog-post-title-height + @overlap-margin-tablet; }
+				@media @mobile-display { top: (@blog-post-height-mobile / 2) - (@blog-post-lang-height / 2) - @blog-post-title-height + @overlap-margin-mobile; }
+				left: 5%;
+				width: 90%;
+				color: white;
+				height: @blog-post-lang-height;
+				line-height: @blog-post-lang-height;
+				vertical-align: middle;
+				font-size: 11px;
+				@media @tablet-display { font-size: 10px; }
+				@media @mobile-display { font-size: 8px; }
+				.blog-post-lang-flag {
+					margin-left: 3px;
+					height: @blog-post-lang-height - 1;
+					width: auto;
+				}
 			}
 		}
 		.blog-post:first-of-type {

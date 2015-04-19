@@ -24,7 +24,6 @@ $(document).ready(function(){
 			$(this).scrollTop(sctop+dif);
 		}
 		lastY = currentY;
-		console.log(sctop);
 	});
 
 	// for fixing issue on mobile where the page contents appears when scrolled down
