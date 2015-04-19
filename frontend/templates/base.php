@@ -23,6 +23,9 @@
 	<script src="<?php echo JS."general.js"; ?>"></script>
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
 	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
+	<?php if ($this->data["page"]=="blog"){ ?>
+	<script src="<?php echo JS."blog.js"; ?>"></script>
+	<?php } ?>
 </head>
 <body>
 	<?php

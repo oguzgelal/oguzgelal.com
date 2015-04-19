@@ -2,7 +2,6 @@ $(document).ready(function(){
 	// general tooltip
 	$('.tooltip').powerTip({ fadeInTime: 0 });
 
-
 	// control sidebar tooltips
 	$(document).on('mouseenter', '.sidepanel-item', function(){
 		var currentElem = $(this);
@@ -19,9 +18,6 @@ $(document).ready(function(){
 		}
 		else{ $.powerTip.destroy(currentElem); }
 	});
-	$(document).on('mouseleave', '.sidepanel-item', function(){
-		$.powerTip.destroy($(this));
-	});
-
+	$(document).on('mouseleave', '.sidepanel-item', function(){ $.powerTip.destroy($(this)); });
 	
 });
