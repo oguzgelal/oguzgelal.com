@@ -1,0 +1,75 @@
+.blogpost {
+	.blogpost-cover {
+		position: relative;
+		width: 100%;
+		height: @blogpost-cover-height;
+		background-color: @body-bg;
+
+		.blogpost-title {
+			position: absolute;
+			bottom: 20px;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+			font-size: 40px;
+			@media @tablet-display { font-size: 34px; }
+			@media @mobile-display { font-size: 24px; }
+			color: white;
+			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+		}
+		.blogpost-language {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			color: white;
+			img {
+				margin-left: 5px;
+				height: 10px;
+				width: auto;
+			}
+		}
+		.blogpost-posttime {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			color: white;
+			font-size: 12px;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+	.blogpost-wrapper {
+		max-width: 1200px;
+		padding: 10px 110px;
+		@media @tablet-display { padding: 10px 80px; }
+		@media @mobile-display { padding: 10px 30px; }
+		margin: auto;
+		
+		p {
+			font-size: 22px;
+			@media @tablet-display { font-size: 19px; }
+			@media @mobile-display { font-size: 16px; }
+		}
+
+		.blogpost-row {
+			width: 100%;
+			margin-top: 20px;
+		}
+		.blogpost-row:first-of-type {
+			margin-top: 30px;
+			@media @tablet-display { margin-top: 30px; }
+			@media @mobile-display { margin-top: 20px; }
+		}
+		.blogpost-row:last-of-type {
+			margin-bottom: 50px;
+			@media @tablet-display { margin-top: 30px; }
+			@media @mobile-display { margin-top: 20px; }
+		}
+		
+	}
+}
+
+
+
+

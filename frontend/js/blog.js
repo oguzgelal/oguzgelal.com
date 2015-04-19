@@ -13,10 +13,9 @@ $(document).ready(function(){
 			if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) { console.log("broken image"); }
 			else {
 				var appendId = $(this).data('append-to');
-				console.log($('.blog-post#'+appendId));
 				$('.blog-post#'+appendId).find('.blog-post-hover').prepend($(this));
 			}
 		});
 	}
-	
+
 });

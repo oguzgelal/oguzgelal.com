@@ -13,52 +13,6 @@ class Utils {
 		return $query;
 	}
 
-	// Should return to ajax calls
-	/*
-	public static function login($username, $password){
-		$user = new \Resource\User();
-		$user->getByUsernamePass($username, $password);
-		if ($user->found){
-			$_SESSION['logged_in'] = 1;
-			$_SESSION['userid'] = $user->id;
-			$_SESSION['username'] = $user->username;
-			$_SESSION['email'] = $user->email;
-			$_SESSION['type'] = $user->type;
-		}
-		else{ echo "Username or password incorrect. "; }
-	}
-
-	public static function logout(){
-		if (isset($_SESSION['logged_in'])){
-			$_SESSION['logged_in'] = 0;
-			unset($_SESSION['logged_in']);
-		}
-		if (isset($_SESSION['userid'])){
-			$_SESSION['userid'] = 0;
-			unset($_SESSION['userid']);
-		}
-		if (isset($_SESSION['username'])){
-			$_SESSION['username'] = 0;
-			unset($_SESSION['username']);
-		}
-		if (isset($_SESSION['email'])){
-			$_SESSION['email'] = 0;
-			unset($_SESSION['email']);
-		}
-		if (isset($_SESSION['type'])){
-			$_SESSION['type'] = 0;
-			unset($_SESSION['type']);
-		}
-		session_destroy();
-	}
-
-	public static function isLoggedIn(){
-		return isset($_SESSION['logged_in']);
-	}
-	public static function isAdminLoggedIn(){
-		return isset($_SESSION['logged_in'])&&$_SESSION['type']==2;
-	}
-
 	public static function elapsedTime($seconds){
 		$a_sec=1;
 		$a_min=$a_sec*60;
@@ -115,5 +69,5 @@ class Utils {
 
 		return $text;
 	}
-	*/
+
 }

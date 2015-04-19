@@ -41,6 +41,7 @@
 		else if ($this->data["page"]=="portfolio"){ include "portfolio.php"; }
 		else if ($this->data["page"]=="resume"){ include "resume.php"; }
 		else if ($this->data["page"]=="blog"){ include "blog.php"; }
+		else if ($this->data["page"]=="blogpost"){ include "blogpost.php"; }
 		else if ($this->data["page"]=="contact"){ include "contact.php"; }
 		else{ include "notfound.php"; }
 	}

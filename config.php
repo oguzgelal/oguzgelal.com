@@ -14,7 +14,7 @@ define("PDO_FETCH_ASSOC", PDO::FETCH_ASSOC);
 
 # PATH Settings
 define("ROOT", "/");
-define("VIEWS", "frontend/");
+define("VIEWS", ROOT."frontend/");
 define("TEMPLATES", VIEWS."templates/");
 define("THIRDPARTY", VIEWS."thirdparty/");
 define("LESS", VIEWS."less/");

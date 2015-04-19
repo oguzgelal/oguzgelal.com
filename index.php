@@ -10,7 +10,7 @@ $app = new \Slim\Slim;
 // CONFIGURE
 $app->config(array(
 	'debug' => true,
-	'templates.path' => TEMPLATES
+	'templates.path' => substr(TEMPLATES, 1, strlen(TEMPLATES))
 	));
 
 // INIT DB OBJECT
@@ -33,6 +33,13 @@ $app->get('/portfolio', function() use ($app){
 $app->get('/cv', function() use ($app){
 	$app->render('base.php', array(
 		'page'=>'resume'
+		));
+});
+$app->get('/blog/post/:id', function($id) use ($app){
+	$app->render('base.php', array(
+		'page'=>'blogpost',
+		'sidepanel_small'=>true,
+		'id'=>$id
 		));
 });
 $app->get('/blog', function() use ($app){
