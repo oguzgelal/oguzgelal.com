@@ -6,6 +6,27 @@ var toggled = false;
 
 $(document).ready(function(){
 
+	// ios devices doesnt register click event so click or touch is determined on page start.
+	var click =((document.ontouchstart!==null)?'click':'touchstart');
+
+	// fix for sidebar ios scroll issue
+	var lastY;
+	$(document).on('touchstart', function(){ lastY = e.originalEvent.touches[0].clientY; });
+	$('.sidepanel').on('touchmove', function(e){
+		var sctop = $(this).scrollTop();
+		var currentY = e.originalEvent.touches[0].clientY;
+		if(currentY > lastY){
+			var dif = currentY - lastY;
+			$(this).scrollTop(sctop-dif);
+		}
+		else if(currentY < lastY){
+			var dif = lastY - currentY;
+			$(this).scrollTop(sctop+dif);
+		}
+		lastY = currentY;
+		console.log(sctop);
+	});
+
 	// for fixing issue on mobile where the page contents appears when scrolled down
 	$(window).on("resize", function(){ hidePageWhenCondensed();	});
 
@@ -25,9 +46,10 @@ $(document).ready(function(){
 	});
 
 
-	$(document).on('click', '.sidepanel-toggle-btn', function(){
+	$(document).on(click, '.sidepanel-toggle-btn', function(e){
 		toggled = true;
 		sidepanelToggle();
+		e.stopPropogation();
 	});
 
 });
@@ -73,7 +95,6 @@ var delay = (function(){
 })();
 
 var resizeSidebarHeight = function(){
-	console.log("set to "+$('.page').height());
 	$('.sidepanel').height($('.page').height());
 	$('.sidepanel-elems').height($('.page').height());
 };
