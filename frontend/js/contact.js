@@ -32,6 +32,11 @@ $(document).ready(function(){
 					message: message
 				}
 			}).fail(function(e){
+				$('.contact-form-submit').html(buttonVal);
+				$('.contact-form-name').val("");
+				$('.contact-form-phone').val("");
+				$('.contact-form-email').val("");
+				$('.contact-form-message').val("");
 				sweetAlert("Oops...", "Sorry, message could not be sent. Worry not, you can allways reach me at o.gelal77@gmail.com", "error");
 			}).success(function(msg) {
 				$('.contact-form-submit').html(buttonVal);
