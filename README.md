@@ -74,4 +74,4 @@ I use MAMP as a local server, which uses **apache**. And my webserver has LEMP s
 
 Database Configuration
 --------------------
-Before usage, rename **dbinfo-sample.php** to **dbinfo.php** and fill in the fields with your database information. You can import the tables and contents using the file **db.sql**.
+Before usage, rename **dbinfo-sample.php** to **dbinfo.php** and fill in the fields with your database information. You can import the tables and contents using the file **db.sql**. Note that same thing applies for **mail-sample.php**, you should rename it to **mail.php**.
