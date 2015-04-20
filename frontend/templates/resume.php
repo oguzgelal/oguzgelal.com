@@ -18,7 +18,7 @@
 				<div class="resume-download-explain">
 					<hr>
 					<p>
-						Applying <b>versioning number</b> (on my CV) is something that I came up with to avoid outdated versions of my CV 
+						Applying <b>version numbers</b> (on my CV) is something that I came up with to avoid outdated versions of my CV 
 						to misinform anyone. Its fairly simple, the PDF copies has version numbers on them. 
 						And there is a small warning that says "<i>The latest version could be found at 
 						oguzgelal.com/cv</i>". So anyone who is interested in me should visit that link and see 
@@ -32,7 +32,7 @@
 						version to look better, then you should download it again ^.^ Otherwise, no need to download. You can just ignore the 
 						<u>z</u> part, but note that there may be a typo on the CV if your <u>z</u> is different with 
 						the one on the site. One last thing; when a number changes, the ones on the righ resets 
-						(ex: 4.1.1 would update to 5.0.0) so you should start checking from the left ^.^
+						(ex: 4.1.1 would update to 5.0.0) so you should start checking the numbers from left ^.^
 					</p>
 				</div>
 			</div>	
