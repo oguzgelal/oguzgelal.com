@@ -3,7 +3,7 @@
 		<div class="resume-col" style="width: 100% !important; margin-top: 20px;">
 			<div class="resume-title">Summary of Me <span class="resume-warning" title="You won't see any skill under 30% in my CV"><i class="fa fa-exclamation-circle"></i></span></div>	
 		</div>
-		<div class="resume-col" style="width: 100% !important; margin-top: 20px;">
+		<div class="resume-col" style="width: 100% !important; margin-top: 10px;">
 			<div class="resume-download">
 				<div class="resume-download-link">
 					<a href="<?php echo RESUME; ?>" target="_new">
@@ -18,7 +18,7 @@
 				<div class="resume-download-explain">
 					<hr>
 					<p>
-						Applying <b>versioning number</b> (on my CV) is something I came up with to avoid outdated versions of my CV 
+						Applying <b>versioning number</b> (on my CV) is something that I came up with to avoid outdated versions of my CV 
 						to misinform anyone. Its fairly simple, the PDF copies has version numbers on them. 
 						And there is a small warning that says "<i>The latest version could be found at 
 						oguzgelal.com/cv</i>". So anyone who is interested in me should visit that link and see 

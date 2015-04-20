@@ -1,3 +1,68 @@
+var hobbies = {
+	"Piano": 85,
+	"Drums": 55,
+	"Webcomic": 60,
+	"Coding": 95,
+	"Reading": 65,
+	"Designing": 75
+};
+var programming = {
+	"Javascript": 99,
+	"Python": 45,
+	"HTML&CSS": 99,
+	"Visual Basic": 55,
+	"Cache": 40,
+	"Bash": 85,
+	"C/C++": 35,
+	"Java": 90,
+	"Swift": 50,
+	"Verilog": 40,
+	"F#": 60,
+	"SQL": 85,
+	"Processing": 95,
+	"PHP": 99,
+	"Perl": 30
+};
+var tools = {
+	"Grunt": 75,
+	"Composer": 95,
+	"Git": 99,
+	"SVN": 40,
+	"Terminal": 80,
+	"Apache": 30,
+	"NGINX": 75,
+	"Vim": 70
+};
+var frameworks = {
+	"BackboneJS (JS)": 95,
+	"AngularJS (JS)": 45,
+	"MeteorJS (JS)": 97,
+	"JSP&JSF (Java)": 60,
+	"ACM (Java)": 70,
+	"Slim Framework (PHP)": 98,
+	"F3 Framework (PHP)": 98,
+	"CakePHP (PHP)": 35,
+	"Django (Python)": 10
+};
+var programs = {
+	"Adobe Photoshop": 80,
+	"Adobe Illustrator": 60,
+	"SketchBook": 95,
+	"Sublime Text 2": 90,
+	"IntelliJ Idea": 50,
+	"Eclipse": 95,
+	"Apple XCode": 90,
+	"Xilinx": 25,
+	"Visual Studio": 60
+};
+var languages = {
+	"English": 90,
+	"Turkish": 99,
+	"Italian": 15,
+	"Spanish": 12,
+	"German": 5
+}
+
 $(document).ready(function(){
 
 	// ios devices doesnt register click event so click or touch is determined on page start.
@@ -18,8 +83,15 @@ $(document).ready(function(){
 
 var createHobbiesChart = function(){
 	var ctx = $("#resume-radar-hobbies").get(0).getContext("2d");
+	
+	var populateLabels = [], populateData = [];
+	for(var item in hobbies){
+		populateLabels.push(item);
+		populateData.push(hobbies[item]);
+	}
+
 	var data = {
-		labels: ["Piano", "Drums", "Webcomics", "Coding", "Reading", "Designing"],
+		labels: populateLabels,
 		datasets: [{
 			label: "Oguz",
 			fillColor: "rgba(151,187,205,0.2)",
@@ -28,25 +100,24 @@ var createHobbiesChart = function(){
 			pointStrokeColor: "#fff",
 			pointHighlightFill: "#fff",
 			pointHighlightStroke: "rgba(151,187,205,1)",
-			data: [
-			85, // Piano
-			45, // Drum
-			60, // Webcomic
-			95, // Coding
-			65, // Reading
-			75 // Designing
-			]
+			data: populateData
 		}]
 	};
-	var options = {
-	};
+	var options = {};
 	var ResumeRadar = new Chart(ctx).Radar(data, options);
 }
 
 var createProgrammingChart = function(){
 	var ctx = $("#resume-radar-programming").get(0).getContext("2d");
+
+	var populateLabels = [], populateData = [];
+	for(var item in programming){
+		populateLabels.push(item);
+		populateData.push(programming[item]);
+	}
+
 	var data = {
-		labels: ["Javascript", "Python", "HTML&CSS", "Visual Basic", "Cache Script", "Bash", "C/C++", "Java", "Swift", "Verilog", "F#", "SQL", "Processing", "PHP", "Perl"],
+		labels: populateLabels,
 		datasets: [{
 			label: "Oguz",
 			fillColor: "rgba(151,187,205,0.2)",
@@ -55,141 +126,113 @@ var createProgrammingChart = function(){
 			pointStrokeColor: "#fff",
 			pointHighlightFill: "#fff",
 			pointHighlightStroke: "rgba(151,187,205,1)",
-			data: [
-				99, //"Javascript",
-				45, //"Python",
-				99, //"HTML&CSS",
-				55, //"Visual Basic",
-				40, //"Cache",
-				85, //"Bash",
-				35, //"C/C++",
-				90, //"Java",
-				50, //"Swift",
-				40, //"Verilog",
-				60, //"F#",
-				85, //"SQL",
-				95, //"Processing",
-				99, //"PHP",
-				30 //"Perl"
-				]
-			}]
-		};
-		var options = {
-		};
-		var ResumeRadar = new Chart(ctx).Radar(data, options);
+			data: populateData
+		}]
+	};
+	var options = {};
+	var ResumeRadar = new Chart(ctx).Radar(data, options);
+}
+
+var createToolsChart = function(){
+	var ctx = $("#resume-radar-tools").get(0).getContext("2d");
+
+	var populateLabels = [], populateData = [];
+	for(var item in tools){
+		populateLabels.push(item);
+		populateData.push(tools[item]);
 	}
 
-	var createToolsChart = function(){
-		var ctx = $("#resume-radar-tools").get(0).getContext("2d");
-		var data = {
-			labels: ["Grunt", "Composer", "Git", "SVN", "Terminal", "Apache", "NGINX", "Vim"],
-			datasets: [{
-				label: "Oguz",
-				fillColor: "rgba(151,187,205,0.2)",
-				strokeColor: "rgba(151,187,205,1)",
-				pointColor: "rgba(151,187,205,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(151,187,205,1)",
-				data: [
-				75, //"Grunt",
-				95, //"Composer",
-				99, //"Git",
-				40, //"SVN",
-				80, //"Terminal",
-				30, //"Apache",
-				75, //"NGINX",
-				70, //"Vim"
-				]
-			}]
-		};
-		var options = {
-		};
-		var ResumeRadar = new Chart(ctx).Radar(data, options);
+	var data = {
+		labels: populateLabels,
+		datasets: [{
+			label: "Oguz",
+			fillColor: "rgba(151,187,205,0.2)",
+			strokeColor: "rgba(151,187,205,1)",
+			pointColor: "rgba(151,187,205,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(151,187,205,1)",
+			data: populateData
+		}]
+	};
+	var options = {};
+	var ResumeRadar = new Chart(ctx).Radar(data, options);
+}
+
+var createFrameworksChart = function(){
+	var ctx = $("#resume-radar-frameworks").get(0).getContext("2d");
+
+	var populateLabels = [], populateData = [];
+	for(var item in frameworks){
+		populateLabels.push(item);
+		populateData.push(frameworks[item]);
 	}
 
-	var createFrameworksChart = function(){
-		var ctx = $("#resume-radar-frameworks").get(0).getContext("2d");
-		var data = {
-			labels: ["BackboneJS (JS)", "AngularJS (JS)", "MeteorJS (JS)", "JSP&JSF (Java)", "ACM (Java)", "Slim Framework (PHP)", "F3 Framework (PHP)", "CakePHP (PHP)", "Django (Python)"],
-			datasets: [{
-				label: "Oguz",
-				fillColor: "rgba(151,187,205,0.2)",
-				strokeColor: "rgba(151,187,205,1)",
-				pointColor: "rgba(151,187,205,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(151,187,205,1)",
-				data: [
-				95, //"BackboneJS (JS)",
-				45, //"AngularJS (JS)",
-				97, //"MeteorJS (JS)",
-				60, //"JSP&JSF (Java)",
-				70, //"ACM (Java)",
-				98, //"Slim Framework (PHP)",
-				98, //"F3 Framework (PHP)",
-				35, //"CakePHP (PHP)",
-				10, //"Django (Python)"
-				]
-			}]
-		};
-		var options = {
-		};
-		var ResumeRadar = new Chart(ctx).Radar(data, options);
+	var data = {
+		labels: populateLabels,
+		datasets: [{
+			label: "Oguz",
+			fillColor: "rgba(151,187,205,0.2)",
+			strokeColor: "rgba(151,187,205,1)",
+			pointColor: "rgba(151,187,205,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(151,187,205,1)",
+			data: populateData
+		}]
+	};
+	var options = {};
+	var ResumeRadar = new Chart(ctx).Radar(data, options);
+}
+
+var createProgramsChart = function(){
+	var ctx = $("#resume-radar-programs").get(0).getContext("2d");
+
+	var populateLabels = [], populateData = [];
+	for(var item in programs){
+		populateLabels.push(item);
+		populateData.push(programs[item]);
 	}
 
-	var createProgramsChart = function(){
-		var ctx = $("#resume-radar-programs").get(0).getContext("2d");
-		var data = {
-			labels: ["Adobe Photoshop", "Adobe Illustrator", "SketchBook", "Sublime Text 2", "IntelliJ Idea", "Eclipse", "Apple XCode", "Xilinx", "Visual Studio"],
-			datasets: [{
-				label: "Oguz",
-				fillColor: "rgba(151,187,205,0.2)",
-				strokeColor: "rgba(151,187,205,1)",
-				pointColor: "rgba(151,187,205,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(151,187,205,1)",
-				data: [
-				80, //"Adobe Photoshop",
-				60, //"Adobe Illustrator",
-				95, //"SketchBook",
-				90, //"Sublime Text 2",
-				50, //"IntelliJ Idea",
-				95, //"Eclipse",
-				90, //"Apple XCode",
-				25, //"Xilinx",
-				60 //"Visual Studio"
-				]
-			}]
-		};
-		var options = {
-		};
-		var ResumeRadar = new Chart(ctx).Radar(data, options);
+	var data = {
+		labels: populateLabels,
+		datasets: [{
+			label: "Oguz",
+			fillColor: "rgba(151,187,205,0.2)",
+			strokeColor: "rgba(151,187,205,1)",
+			pointColor: "rgba(151,187,205,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(151,187,205,1)",
+			data: populateData
+		}]
+	};
+	var options = {};
+	var ResumeRadar = new Chart(ctx).Radar(data, options);
+}
+
+var createLanguagesChart = function(){
+	var ctx = $("#resume-radar-languages").get(0).getContext("2d");
+
+	var populateLabels = [], populateData = [];
+	for(var item in languages){
+		populateLabels.push(item);
+		populateData.push(languages[item]);
 	}
 
-	var createLanguagesChart = function(){
-		var ctx = $("#resume-radar-languages").get(0).getContext("2d");
-		var data = {
-			labels: ["English", "Turkish", "Italian", "Spanish", "German"],
-			datasets: [{
-				label: "Oguz",
-				fillColor: "rgba(151,187,205,0.2)",
-				strokeColor: "rgba(151,187,205,1)",
-				pointColor: "rgba(151,187,205,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(151,187,205,1)",
-				data: [
-				90, //"English",
-				99, //"Turkish",
-				15, //"Italian",
-				12, //"Spanish",
-				5 //"German"
-				]
-			}]
-		};
-		var options = {
-		};
-		var ResumeRadar = new Chart(ctx).Radar(data, options);
-	}
+	var data = {
+		labels: populateLabels,
+		datasets: [{
+			label: "Oguz",
+			fillColor: "rgba(151,187,205,0.2)",
+			strokeColor: "rgba(151,187,205,1)",
+			pointColor: "rgba(151,187,205,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(151,187,205,1)",
+			data: populateData
+		}]
+	};
+	var options = {};
+	var ResumeRadar = new Chart(ctx).Radar(data, options);
+}
