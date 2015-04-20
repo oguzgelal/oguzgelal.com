@@ -1,9 +1,9 @@
 <div class="page homepage">
-	<!-- <div class="homepage-cover"></div> -->
+	<img class="homepage-cover" src="<?php echo IMGS."ozu.jpg"; ?>" alt="Ozyegin University">
 	<div class="homepage-wrapper">
 		<div class="homepage-row homepage-avatar fancy-enter-bounce">
 			<div class="home-avatar-container">
-				<img src="<?php echo IMGS."photo.jpg" ?>" alt="Photo of Oguz Gelal">	
+				<img src="<?php echo IMGS."photo.jpg"; ?>" alt="Photo of Oguz Gelal">	
 			</div>
 		</div>
 		<div class="homepage-row homepage-title fancy-enter-bounce" style="margin-top: 10px;"> Hi, I'm <b>Oguz Gelal</b>, </div>
