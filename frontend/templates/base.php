@@ -21,7 +21,9 @@
 	<!-- Thirdparty -->
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."powertip/css/jquery.powertip.min.css"; ?>">
+	<link rel="stylesheet" href="<?php echo THIRDPARTY."sweetalert.css"; ?>">
 	<script src="<?php echo THIRDPARTY."powertip/jquery.powertip.min.js"; ?>"></script>
+	<script src="<?php echo THIRDPARTY."sweetalert/sweetalert.min.js"; ?>"></script>
 	<!-- Scripts -->
 	<script src="<?php echo JS."general.js"; ?>"></script>
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
@@ -35,6 +37,10 @@
 	<?php if ($this->data["page"]=="resume"){ ?>
 	<script src="<?php echo THIRDPARTY."chart.min.js"; ?>"></script>
 	<script src="<?php echo JS."resume.js"; ?>"></script>
+	<?php } ?>
+	<!-- Contact Specific -->
+	<?php if ($this->data["page"]=="contact"){ ?>
+	<script src="<?php echo JS."contact.js"; ?>"></script>
 	<?php } ?>
 </head>
 <body>

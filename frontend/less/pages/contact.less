@@ -7,6 +7,14 @@
 			@media @tablet-display { width: 100% !important; }
 			.box-sizing(border-box);
 			padding: 30px;
+			@media @tablet-display {
+				text-align: center;
+				padding: 15px;
+			}
+			@media @mobile-display {
+				text-align: center;
+				padding: 10px;
+			}
 			.contact-more-row {
 				width: 100%;
 				@contact-row-size: 30px;
@@ -39,35 +47,40 @@
 				.contact-form-elem:-ms-input-placeholder { color: @border-color; }
 				
 				textarea.contact-form-elem {
-					font-size: 22px;
-					line-height: 22px;
 					height: 150px;
 				}
 				button.contact-form-elem {
 					background-color: @link;
-					border-right: 2px solid @link-hover;
-					border-bottom: 2px solid @link-hover;
+					border-right: 1px solid @link-hover;
+					border-bottom: 1px solid @link-hover;
 					font-size: 22px;
 					line-height: 22px;
 					color: white;
 				}
 				button.contact-form-elem:hover {
-					margin-top: 2px;
-					margin-left: 2px;
-					cursor: pointer;
 					border: none;
+					margin-top: 1px;
+					margin-left: 1px;
+					cursor: pointer;
 				}
 
 				.data-wrapper {
+					text-align: left;
 					display: inline-block;
-					@media @tablet-display { width: 40% !important; }
-					@media @mobile-display { width: 100% !important; }
+					margin-right: 10px;
+					margin-bottom: 10px;
+					@media @tablet-display {
+						width: 40% !important;
+						margin-right: 5px;
+					}
+					@media @mobile-display {
+						width: 100% !important;
+						margin-right: 5px;
+					}
 					padding: 10px;
 					background-color: @body-bg;
 					border: 1px solid @border-color;
 					.border-radius(5px);
-					margin-right: 10px;
-					margin-bottom: 10px;
 					a { color: @text-secondary; }
 					a:hover { text-decoration: underline !important; }
 					.contact-more-icon {

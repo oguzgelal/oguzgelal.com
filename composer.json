@@ -1,6 +1,7 @@
 {
 	"require": {
-		"slim/slim": "~2.6"
+		"slim/slim": "~2.6",
+		"phpmailer/phpmailer": "~5.2"
 		},
 		"autoload": {
 			"psr-4": { 

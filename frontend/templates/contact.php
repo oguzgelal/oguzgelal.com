@@ -87,13 +87,13 @@
 				<input type="text" class="contact-form-elem contact-form-phone" placeholder="Phone...">
 			</div>
 			<div class="contact-more-row">
-				<input type="text" class="contact-form-elem contact-form-email" placeholder="Email...">
+				<input type="text" class="contact-form-elem contact-form-email" placeholder="*Email...">
 			</div>
 			<div class="contact-more-row">
-				<textarea class="contact-form-elem contact-form-message"></textarea>
+				<textarea class="contact-form-elem contact-form-message" placeholder="*Message..."></textarea>
 			</div>
 			<div class="contact-more-row">
-				<button class="contact-form-elem contact-form-submit">Say Hi :)</button>
+				<button class="contact-form-elem contact-form-submit">Send</button>
 			</div>
 		</div>
 

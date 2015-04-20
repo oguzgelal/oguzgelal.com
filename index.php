@@ -53,6 +53,9 @@ $app->get('/contact', function() use ($app){
 		'page'=>'contact'
 		));
 });
+$app->post('/send', function() use ($app){
+	include substr(AJAX, 1, strlen(AJAX))."mail.php";
+});
 
 $app->notFound(function() use ($app){
 	$app->render('base.php', array(
