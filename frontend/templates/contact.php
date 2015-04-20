@@ -41,7 +41,7 @@
 				<!-- Google+ -->
 				<div class="data-wrapper">
 					<i class="fa fa-google-plus contact-more-icon"></i>
-					<span class="contact-more-data"><a href="https://plus.google.com/+O%C4%9FuzGelal" target="_new">/OğuzGelal</a></span>
+					<span class="contact-more-data"><a href="https://plus.google.com/+O%C4%9FuzGelal" target="_new">/+OğuzGelal</a></span>
 				</div>
 				<!-- LinkedIn -->
 				<div class="data-wrapper">

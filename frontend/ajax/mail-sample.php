@@ -1,10 +1,9 @@
 <?php
-
-// THIS FILE IS THE EXACT COPY OF MAIL.PHP FILE WITHOUT THE PASSWORDS
-
 if (isset($_POST['email']) && isset($_POST['message'])){
 	$mail = new \PHPMailer;
 
+	$mail->CharSet = 'UTF-8';
+	$mail->Encoding="base64";
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
@@ -21,10 +20,10 @@ if (isset($_POST['email']) && isset($_POST['message'])){
 	$mail->isHTML(true);
 
 	$mail->Subject = 'OGUZGELAL - New Message';
-	$mail->Body    = 'New message on oguzgelal.com <br><br> <b>Name</b>: '.$_POST['name']."<br><b>Phone</b>: ".$_POST['phone']."<br><b>Email</b>: ".$_POST['email']."<br><b>Message</b>: ".$_POST['email'];
-	$mail->AltBody = 'New message on oguzgelal.com. Name: '.$_POST['name'].", Phone: ".$_POST['phone'].", Email: ".$_POST['email'].", Message: ".$_POST['email'];
+	$mail->Body    = 'New message on oguzgelal.com <br><br> <b>Name</b>: '.$_POST['name']."<br><b>Phone</b>: ".$_POST['phone']."<br><b>Email</b>: ".$_POST['email']."<br><b>Message</b>: ".$_POST['message'];
+	$mail->AltBody = 'New message on oguzgelal.com. Name: '.$_POST['name'].", Phone: ".$_POST['phone'].", Email: ".$_POST['email'].", Message: ".$_POST['message'];
 
 	if(!$mail->send()) { echo "0"; }
 	else { echo "1"; }
 }
-else { echo "-1"; }
+else { echo "0"; }
