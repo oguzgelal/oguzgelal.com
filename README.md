@@ -5,7 +5,7 @@ My Website - oguzgelal.com
 This is the source codes of my website, *still under development*. Here are some information:
 
 - I used <a href="https://getcomposer.org/" target="_new">**Composer**</a> as the dependency manager.
-- It uses <a href="http://www.slimframework.com/" target="_new">**Slim Framework**</a> (PHP) for the backend and a <a href="http://www.mysql.com/" target="_new">**MySQL**</a> database Also, <a href="https://github.com/PHPMailer/PHPMailer" target="_new">PHPMailer</a> is used for sending mails.
+- It uses <a href="http://www.slimframework.com/" target="_new">**Slim Framework**</a> (PHP) for the backend and a <a href="http://www.mysql.com/" target="_new">**MySQL**</a> database Also, <a href="https://github.com/PHPMailer/PHPMailer" target="_new"><b>PHPMailer</b></a> is used for sending mails.
 - As for the frontend, here is the list of things that are used so far:
 *  *PHP (as a templating engine)*
 *  <a href="http://jquery.com/" target="_new">jQuery</a>
