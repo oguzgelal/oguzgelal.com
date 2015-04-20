@@ -20,14 +20,27 @@ $(document).ready(function(){
 		}
 
 		if (ok){
+			var buttonVal = $('.contact-form-submit').html();
+			$('.contact-form-submit').html(" <i class='fa fa-spin fa-spinner' style='font-size: 13px; vertical-align: middle;'></i>");
 			$.ajax({
 				type: "POST",
 				url: "/send",
-				data: { name: name, phone: phone, email: email, message: message }
+				data: {
+					name: name,
+					phone: phone,
+					email: email,
+					message: message
+				}
 			}).fail(function(e){
-				$('body').append(e.responseText);
+				sweetAlert("Oops...", "Sorry, message could not be sent. Worry not, you can allways reach me at o.gelal77@gmail.com", "error");
 			}).success(function(msg) {
-				alert(msg);
+				$('.contact-form-submit').html(buttonVal);
+				$('.contact-form-name').val("");
+				$('.contact-form-phone').val("");
+				$('.contact-form-email').val("");
+				$('.contact-form-message').val("");
+				if (msg=="1"){ sweetAlert("Thanks", "I got your message. I'll get back to you as fast as I can.", "success"); }
+				else{ sweetAlert("Oops...", "Sorry, message could not be sent. Worry not, you can allways reach me at o.gelal77@gmail.com", "error"); }
 			});	
 		}
 	});

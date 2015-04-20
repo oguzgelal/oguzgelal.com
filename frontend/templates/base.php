@@ -21,7 +21,7 @@
 	<!-- Thirdparty -->
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."fontawesome/css/font-awesome.min.css"; ?>">
 	<link rel="stylesheet" href="<?php echo THIRDPARTY."powertip/css/jquery.powertip.min.css"; ?>">
-	<link rel="stylesheet" href="<?php echo THIRDPARTY."sweetalert.css"; ?>">
+	<link rel="stylesheet" href="<?php echo THIRDPARTY."sweetalert/sweetalert.css"; ?>">
 	<script src="<?php echo THIRDPARTY."powertip/jquery.powertip.min.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."sweetalert/sweetalert.min.js"; ?>"></script>
 	<!-- Scripts -->
