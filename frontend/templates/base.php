@@ -5,7 +5,7 @@
 	<?php
 	if ($this->data["page"]=="blogpost"){ include "blogpost_head.php"; }
 	else { ?><title>Oguz Gelal | Personal Website & Blog</title><?php }
-	?>
+		?>
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."jquery/jquery-mig.js"; ?>"></script>
@@ -26,8 +26,15 @@
 	<script src="<?php echo JS."general.js"; ?>"></script>
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
 	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
+	
+	<!-- Blog Specific -->
 	<?php if ($this->data["page"]=="blog"){ ?>
 	<script src="<?php echo JS."blog.js"; ?>"></script>
+	<?php } ?>
+	<!-- Resume Specific -->
+	<?php if ($this->data["page"]=="resume"){ ?>
+	<script src="<?php echo THIRDPARTY."chart.min.js"; ?>"></script>
+	<script src="<?php echo JS."resume.js"; ?>"></script>
 	<?php } ?>
 </head>
 <body>

@@ -15,6 +15,7 @@ This is the source codes of my website, *still under development*. Here are some
 	*  <a href="http://daneden.github.io/animate.css/" target="_new">Animate.css</a> (renamed to animate.less in utils)
 	*  <a href="http://fortawesome.github.io/Font-Awesome/" target="_new">Font Awesome</a>
 	*  <a href="http://stevenbenner.github.io/jquery-powertip/" target="_new">PowerTip</a> (Lightweight plugin for Tooltips)
+	*  <a href="http://www.chartjs.org/" target="_new">ChartJS</a> (Graphing Engine)
 	
 
 Want to use the codes ?

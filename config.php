@@ -25,9 +25,14 @@ define("PORTFOLIO", IMGS."portfolio/");
 define("FLAGS", IMGS."flags/");
 define("BLOG", IMGS."blog/");
 define("STYLE", ASSETS."style/");
+define("FILES", ASSETS."files/");
 
 # DOMAIN Settings
 define("PREFIX", "http://");
 if (LOCAL){ define( "DOMAIN", "localhost:8888" ); }
 else{ define( "DOMAIN", "new.oguzgelal.com" ); }
+
+# OTHER
+define("RESUME", FILES."OguzGelalCV.pdf");
+define("RESUME_VERSION", "4.4.1");
 

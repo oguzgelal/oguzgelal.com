@@ -2,6 +2,11 @@ $(document).ready(function(){
 	// general tooltip
 	$('.tooltip').powerTip({ fadeInTime: 0 });
 
+	$('.resume-warning').powerTip({
+		fadeInTime: 0,
+		placement: 's'
+	});
+
 	// control sidebar tooltips
 	$(document).on('mouseenter', '.sidepanel-item', function(){
 		var currentElem = $(this);
