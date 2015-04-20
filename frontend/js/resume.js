@@ -4,6 +4,8 @@ var hobbies = {
 	"Webcomic": 60,
 	"Coding": 95,
 	"Reading": 65,
+	"Table Tennis": 55,
+	"Chess": 70,
 	"Designing": 75
 };
 var programming = {
