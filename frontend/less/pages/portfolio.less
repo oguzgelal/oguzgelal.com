@@ -55,6 +55,8 @@
 				}
 				img {
 					.border-radius(5px);
+					border: 1px solid @border-color;
+					.box-sizing(border-box);
 					max-width: @portfolio-vis-maxwidth;
 					width: 100%;
 					height: auto;
@@ -86,6 +88,33 @@
 						margin: auto;
 						margin-top: 10px;
 						text-align: left;
+					}
+
+					.portfolio-recent {
+						font-size: 10px;
+						margin-left: 5px;
+						color: @link;
+						vertical-align: middle;
+						.portfolio-recent-text {
+							margin-left: 3px;
+							@media @mobile-display { display: none; }
+						}
+					}
+					.portfolio-recent:hover {
+						cursor: pointer;
+					}
+					.portfolio-simple {
+						font-size: 10px;
+						margin-left: 5px;
+						color: #fbb034;
+						vertical-align: middle;
+						.portfolio-simple-text {
+							margin-left: 3px;
+							@media @mobile-display { display: none; }
+						}
+					}
+					.portfolio-simple:hover {
+						cursor: pointer;
 					}
 					
 				}

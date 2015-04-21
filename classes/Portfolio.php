@@ -15,7 +15,7 @@ class Portfolio {
 	function get(){
 		$ins = [];
 		// build sql
-		$sql = "SELECT * FROM $this->tableName";
+		$sql = "SELECT * FROM $this->tableName ORDER BY `order`";
 		// query db
 		$query = \Resource\Utils::querydb($this->app->db, $sql, $ins);
 		$portfolio = $query->fetchAll(PDO_FETCH_ASSOC);

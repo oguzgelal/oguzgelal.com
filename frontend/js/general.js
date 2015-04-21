@@ -6,6 +6,14 @@ $(document).ready(function(){
 		fadeInTime: 0,
 		placement: 's'
 	});
+	$('.portfolio-recent').powerTip({
+		fadeInTime: 0,
+		placement: 's'
+	});
+	$('.portfolio-simple').powerTip({
+		fadeInTime: 0,
+		placement: 's'
+	});
 
 	// control sidebar tooltips
 	$(document).on('mouseenter', '.sidepanel-item', function(){

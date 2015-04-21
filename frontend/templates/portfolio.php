@@ -11,7 +11,11 @@
 			<div class="portfolio-box clearfix fancy-enter-portfolio">
 				<div class="portfolio-box-vis"><img src="<?php echo PORTFOLIO.$portfolio["image"]; ?>" alt="Dummy"></div>
 				<div class="portfolio-box-content">
-					<div class="portfolio-box-title"><?php echo $portfolio["title"]; ?></div>
+					<div class="portfolio-box-title">
+						<?php echo $portfolio["title"]; ?>
+						<?php if($portfolio["recent"]=="1"){ ?><i class="fa fa-circle portfolio-recent" title="Ongoing/Recent"><span class="portfolio-recent-text">Recent</span></i><?php } ?>
+						<?php if($portfolio["simple"]=="1"){ ?><i class="fa fa-circle portfolio-simple" title="Small Scale"><span class="portfolio-simple-text">Small Scale</span></i><?php } ?>
+					</div>
 					<div class="portfolio-box-desc"><?php echo $portfolio["desc"]; ?></div>
 					<div class="portfolio-box-tagcloud">
 						<ul class="portfolio-box-taglist">
