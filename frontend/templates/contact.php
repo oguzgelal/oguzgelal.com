@@ -1,6 +1,32 @@
 <div class="page contact">
 	<div class="contact-wrapper">
 		
+		<!-- Contact Me -->
+		<div class="contact-sect contact-send">
+			
+			<div class="contact-more-row">
+				<div class="contact-social-title">Send me a message</div>
+			</div>
+
+			<div class="contact-more-row">
+				<input type="text" class="contact-form-elem contact-form-name" placeholder="Name...">
+			</div>
+			<div class="contact-more-row">
+				<input type="text" class="contact-form-elem contact-form-phone" placeholder="Phone...">
+			</div>
+			<div class="contact-more-row">
+				<input type="text" class="contact-form-elem contact-form-email" placeholder="*Email...">
+			</div>
+			<div class="contact-more-row">
+				<textarea class="contact-form-elem contact-form-message" placeholder="*Message..."></textarea>
+			</div>
+			<div class="contact-more-row">
+				<button class="contact-form-elem contact-form-submit">Send</button>
+			</div>
+		</div>
+
+
+		<!-- Me on the internet -->
 		<div class="contact-sect contact-more">
 			
 			<div class="contact-more-row">
@@ -73,29 +99,6 @@
 			</div>
 		</div>
 
-
-		<div class="contact-sect contact-send">
-			
-			<div class="contact-more-row">
-				<div class="contact-social-title">Send me a message</div>
-			</div>
-
-			<div class="contact-more-row">
-				<input type="text" class="contact-form-elem contact-form-name" placeholder="Name...">
-			</div>
-			<div class="contact-more-row">
-				<input type="text" class="contact-form-elem contact-form-phone" placeholder="Phone...">
-			</div>
-			<div class="contact-more-row">
-				<input type="text" class="contact-form-elem contact-form-email" placeholder="*Email...">
-			</div>
-			<div class="contact-more-row">
-				<textarea class="contact-form-elem contact-form-message" placeholder="*Message..."></textarea>
-			</div>
-			<div class="contact-more-row">
-				<button class="contact-form-elem contact-form-submit">Send</button>
-			</div>
-		</div>
 
 	</div>
 </div>
