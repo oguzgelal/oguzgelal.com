@@ -17,8 +17,7 @@
 				and a thinker. I enjoy watching movies 
 				<span class="desc-comment">(comedy, horror and drama)</span> 
 				and reading books <span class="desc-comment">(informative books, mostly about philosophy)</span>. 
-				I draw <a href="http://ctp200.com" target="_new">webcomics</a>, 
-				but nothing professional, only for fun. Other than that, I love music, 
+				I draw <a href="http://ctp200.com" target="_new">webcomics</a>, I love music, 
 				especially classical and classical rock. I play the piano and the drums.
 			</p>
 		</div>
