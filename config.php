@@ -35,5 +35,5 @@ else{ define( "DOMAIN", "new.oguzgelal.com" ); }
 
 # OTHER
 define("RESUME", FILES."OguzGelalCV.pdf");
-define("RESUME_VERSION", "4.4.1");
+define("RESUME_VERSION", "5.0");
 
