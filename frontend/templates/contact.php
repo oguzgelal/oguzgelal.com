@@ -84,11 +84,12 @@
 					<i class="fa fa-youtube contact-more-icon"></i>
 					<span class="contact-more-data"><a href="https://www.youtube.com/user/ogz279" target="_new">/user/ogz279</a></span>
 				</div>
-				<!-- Reddit -->
+				<!-- Reddit 
 				<div class="data-wrapper">
 					<i class="fa fa-reddit contact-more-icon"></i>
 					<span class="contact-more-data"><a href="http://www.reddit.com/user/oguz279/" target="_new">/user/oguz279</a></span>
 				</div>
+				-->
 				<!-- Medium -->
 				<div class="data-wrapper">
 					<i class="fa fa-medium contact-more-icon"></i>
