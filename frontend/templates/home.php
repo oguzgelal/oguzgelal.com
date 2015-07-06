@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="homepage-row homepage-title fancy-enter-bounce" style="margin-top: 10px;"> Hi, I'm <b>Oguz Gelal</b>, </div>
-		<div class="homepage-row homepage-desc fancy-enter-bounce"> I'm a computer science student at <a href="http://ozyegin.edu.tr" target="_new">Ozyegin University</a>. </div>
+		<div class="homepage-row homepage-desc fancy-enter-bounce"> I'm a software & web developer. </div>
 		<div class="homepage-row homepage-infotiles fancy-enter-bounce" style="margin-top: 30px;">
 			<p>
 				I will start with a cliche: I'm a 
