@@ -10,14 +10,12 @@
 		<div class="homepage-row homepage-desc fancy-enter-bounce"> I'm a software & web developer. </div>
 		<div class="homepage-row homepage-infotiles fancy-enter-bounce" style="margin-top: 30px;">
 			<p>
-				I will start with a cliche: I'm a 
+				I'm a 
 				<span class="tooltip" title="Yeah, of course this is dynamic. <br> What, you thought I update this every year ?"> <?php echo date("Y")-1993; ?> </span> year old programmer, geek, 
-				<a href="http://en.wikipedia.org/wiki/Stoicism" target="_new">Stoic</a>, 
-				<a href="http://ind.ie" target="_new">open-source enthusiast</a> 
-				and a thinker. I enjoy watching movies 
+				<a href="http://ind.ie" target="_new">open-source enthusiast</a> and the founder of <a href='https://socialsurf.io' target="_new">Social Surf</a>. I enjoy watching movies 
 				<span class="desc-comment">(comedy, horror and drama)</span> 
 				and reading books <span class="desc-comment">(informative books, mostly about philosophy)</span>. 
-				I draw <a href="http://ctp200.com" target="_new">webcomics</a>, I love music, 
+				I used to draw <a href="http://ctp200.com" target="_new">webcomics</a>, I love music, 
 				especially classical and classical rock. I play the piano and the drums.
 			</p>
 		</div>
@@ -25,13 +23,13 @@
 			<p>
 				I was born in Izmir and moved to Istanbul for
 				<span class="tooltip tooltip-highlight" title="Ozyegin University">college</span>. 
-				I had many work experiences and took quite a few responsibilities, 
-				you can find more about those <a href="/cv" target="_self">here</a>.
+				<!-- I had many work experiences and took quite a few responsibilities, 
+				you can find more about those <a href="/cv" target="_self">here</a>.-->
 				My field of interests are web, computer networks and 
 				<a href='http://en.wikipedia.org/wiki/Semantic_Web' target='_new'>semantic web technologies</a>. 
-				As a web developer (frontend and back-end) I work as a <a href="https://www.fiverr.com/oguzgelal/" target="_new">freelancer</a> 
-				and I'm currently working for an awesome startup <a href="http://cubic.fm" target="_new">cubic.fm</a> 
-				as a frontend engineer. Other than that, I have some 
+				As a web developer (frontend and back-end) I used to work as a <a href="https://www.fiverr.com/oguzgelal/" target="_new">freelancer</a> 
+				and for an awesome startup <a href="http://cubic.fm" target="_new">cubic.fm</a> 
+				as a frontend developer. Now, I'm following my dreams, developing <a href='https://socialsurf.io' target="_new">Social Surf</a>. Other than that, I have some 
 				<a href="/portfolio" target="_self">ongoing projects</a> too. 
 				If you have any questions or comments, please don't hesitate 
 				to <a href="/contact" target="_self">contact me</a> and I'll 
