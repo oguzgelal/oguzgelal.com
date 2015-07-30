@@ -13,11 +13,14 @@
 	ga('send', 'pageview');
 
 	</script>
-
+	
 	<?php
 	if ($this->data["page"]=="blogpost"){ include "blogpost_head.php"; }
 	else { ?><title>Oguz Gelal | Personal Website & Blog</title><?php }
 		?>
+	
+	<script type="text/javascript" src="https://socialsurf.io/embed/embed.min.js"></script>
+
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
 	<script src="<?php echo THIRDPARTY."jquery/jquery-mig.js"; ?>"></script>
@@ -75,6 +78,6 @@
 	}
 
 	?>
-	
+
 </body>
 </html>
