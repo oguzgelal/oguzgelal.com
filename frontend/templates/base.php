@@ -75,5 +75,6 @@
 	}
 
 	?>
+	<script type="text/javascript" src="https://socialsurf.io/embed/embed.min.js"></script>
 </body>
 </html>
