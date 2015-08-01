@@ -19,7 +19,8 @@
 	else { ?><title>Oguz Gelal | Personal Website & Blog</title><?php }
 		?>
 	
-	<script type="text/javascript" src="https://socialsurf.io/embed/embed.min.js"></script>
+	<!-- embed SocialSurf -->
+	<script type="text/javascript" src="https://socialsurf.io/embed/v/1-0-0/embed.min.js"></script>
 
 	<!-- jQuery -->
 	<script src="<?php echo THIRDPARTY."jquery/jquery.js"; ?>"></script>
