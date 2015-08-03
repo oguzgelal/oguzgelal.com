@@ -3,6 +3,35 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	
+	<?php
+	$title      = "Zipf's Law of the Internet: Explaining Online Behavior";
+	$link       = "http://blog.parsely.com/post/57821746552";
+	$imageURL   = "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png";
+	$section    = "Programming";
+	$author     = "Alan Alexander Milne";
+	$tags       = array("Programming", "traffic", "local");
+	$pubDate    = DateTime::createFromFormat("Y-m-d H:i:s P", "2012-01-01 11:34:02 -05:00");
+
+	function getCleanParselyPageValue($val) {
+		$val = str_replace("\n", "", $val);
+		$val = str_replace("\r", "", $val);
+		return $val;
+	}
+
+	$parselyPage = array();
+	$parselyPage["title"]       = getCleanParselyPageValue($title);
+	$parselyPage["link"]        = $link;
+	$parselyPage["image_url"]   = $imageURL;
+	$parselyPage["type"]        = "post";
+	$parselyPage["post_id"]     = "57821746552";
+	$parselyPage["pub_date"]    = gmdate("Y-m-d\TH:i:s\Z", $pubDate->getTimestamp());
+	$parselyPage["section"]     = getCleanParselyPageValue($section);
+	$parselyPage["author"]      = getCleanParselyPageValue($author);
+	$parselyPage["tags"]        = $tags;
+
+	$output = "<meta name='parsely-page' content='" . json_encode($parselyPage, JSON_HEX_APOS | JSON_HEX_QUOT) . "' />";
+	?>
+
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -59,20 +88,6 @@
 	<?php if ($this->data["page"]=="contact"){ ?>
 	<script src="<?php echo JS."contact.js"; ?>"></script>
 	<?php } ?>
-
-	<script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "NewsArticle",
-		"headline": "Zipf's Law of the Internet: Explaining Online Behavior",
-		"url": "http://blog.parsely.com/post/57821746552",
-		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
-		"dateCreated": "2013-08-15T13:00:00Z",
-		"articleSection": "Programming",
-		"creator": "Alan Alexander Milne",
-		"keywords": ["statistics","zipf","internet","behavior"]
-	}
-	</script>
 
 </head>
 <body>
