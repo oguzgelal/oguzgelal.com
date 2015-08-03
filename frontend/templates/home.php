@@ -11,10 +11,10 @@
 		<div class="homepage-row homepage-infotiles fancy-enter-bounce" style="margin-top: 30px;">
 			<p>
 				I'm a 
-				<span class="tooltip" title="Yeah, of course this is dynamic. <br> What, you thought I update this every year ?"> <?php echo date("Y")-1993; ?> </span> year old programmer, geek, 
+				<span class="tooltip" title="Yeah, of course this is dynamic. <br> What, you thought I update this every year ?"> <?php echo date("Y")-1993; ?> </span> year old programmer, entrepreneur, geek, 
 				<a href="http://ind.ie" target="_new">open-source enthusiast</a> and the founder of <a href='https://socialsurf.io' target="_new">Social Surf</a>. I enjoy watching movies 
 				<span class="desc-comment">(comedy, horror and drama)</span> 
-				and reading books <span class="desc-comment">(informative books, mostly about philosophy)</span>. 
+				and reading books. 
 				I used to draw <a href="http://ctp200.com" target="_new">webcomics</a>, I love music, 
 				especially classical and classical rock. I play the piano and the drums.
 			</p>
@@ -29,7 +29,7 @@
 				<a href='http://en.wikipedia.org/wiki/Semantic_Web' target='_new'>semantic web technologies</a>. 
 				As a web developer (frontend and back-end) I used to work as a <a href="https://www.fiverr.com/oguzgelal/" target="_new">freelancer</a> 
 				and for an awesome startup <a href="http://cubic.fm" target="_new">cubic.fm</a> 
-				as a frontend developer. Now, I'm following my dreams, developing <a href='https://socialsurf.io' target="_new">Social Surf</a>. Other than that, I have some 
+				as a frontend developer. Now, I'm working at <a href="http://webrazzi.com" target="_new">Webrazzi</a> as a software developer & <a href='https://en.wikipedia.org/wiki/Entrepreneur_in_Residence' target='_new'>entrepreneur in residence</a> (developing <a href='https://socialsurf.io' target="_new">SocialSurf</a>). Other than that, I have some 
 				<a href="/portfolio" target="_self">ongoing projects</a> too. 
 				If you have any questions or comments, please don't hesitate 
 				to <a href="/contact" target="_self">contact me</a> and I'll 
