@@ -2,36 +2,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	
-	<?php
-	$title      = "Zipf's Law of the Internet: Explaining Online Behavior";
-	$link       = "http://blog.parsely.com/post/57821746552";
-	$imageURL   = "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png";
-	$section    = "Programming";
-	$author     = "Alan Alexander Milne";
-	$tags       = array("Programming", "traffic", "local");
-	$pubDate    = DateTime::createFromFormat("Y-m-d H:i:s P", "2012-01-01 11:34:02 -05:00");
-
-	function getCleanParselyPageValue($val) {
-		$val = str_replace("\n", "", $val);
-		$val = str_replace("\r", "", $val);
-		return $val;
-	}
-
-	$parselyPage = array();
-	$parselyPage["title"]       = getCleanParselyPageValue($title);
-	$parselyPage["link"]        = $link;
-	$parselyPage["image_url"]   = $imageURL;
-	$parselyPage["type"]        = "post";
-	$parselyPage["post_id"]     = "57821746552";
-	$parselyPage["pub_date"]    = gmdate("Y-m-d\TH:i:s\Z", $pubDate->getTimestamp());
-	$parselyPage["section"]     = getCleanParselyPageValue($section);
-	$parselyPage["author"]      = getCleanParselyPageValue($author);
-	$parselyPage["tags"]        = $tags;
-
-	$output = "<meta name='parsely-page' content='" . json_encode($parselyPage, JSON_HEX_APOS | JSON_HEX_QUOT) . "' />";
-	echo $output;
-	?>
 
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -111,24 +81,6 @@
 	}
 
 	?>
-
-	<!-- !!!!! TODO : Remove Parsly !!!!! -->
-	<!-- START Parse.ly Include: Standard -->
-	<div id="parsely-root" style="display: none">
-		<div id="parsely-cfg" data-parsely-site="oguzgelal.com"></div>
-	</div>
-	<script>
-	(function(s, p, d) {
-		var h=d.location.protocol, i=p+"-"+s,
-		e=d.getElementById(i), r=d.getElementById(p+"-root"),
-		u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
-		:"static."+p+".com";
-		if (e) return;
-		e = d.createElement(s); e.id = i; e.async = true;
-		e.src = h+"//"+u+"/p.js"; r.appendChild(e);
-	})("script", "parsely", document);
-	</script>
-	<!-- END Parse.ly Include -->
 
 </body>
 </html>
