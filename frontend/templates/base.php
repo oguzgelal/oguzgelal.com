@@ -69,8 +69,8 @@
 	{
 		"@context": "http://oguzgelal.com",
 		"@type": "TypeDeneme",
-		"headline": <?php echo $parslyHeadline; ?>,
-		"url": <?php echo $parslyURL; ?>,
+		"headline": <?php echo "\"".$parslyHeadline."\""; ?>,
+		"url": <?php echo "\"".$parslyURL."\""; ?>,
 		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
 		"dateCreated": "2013-08-15T13:00:00Z",
 		"articleSection": "Programming",
