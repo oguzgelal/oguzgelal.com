@@ -45,19 +45,40 @@
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
 	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
 	
+	<?php
+		$parslyHeadline = "Regular Page";
+		$parslyURL = "http://oguzgelal.com";
+	?>
+
 	<!-- Blog Specific -->
-	<?php if ($this->data["page"]=="blog"){ ?>
+	<?php if ($this->data["page"]=="blog"){ $parslyHeadline = "Blog Page"; $parslyURL = "http://oguzgelal.com/blog"; ?>
 	<script src="<?php echo JS."blog.js"; ?>"></script>
 	<?php } ?>
 	<!-- Resume Specific -->
-	<?php if ($this->data["page"]=="resume"){ ?>
+	<?php if ($this->data["page"]=="resume"){ $parslyHeadline = "Resume Page"; $parslyURL = "http://oguzgelal.com/cv"; ?>
 	<script src="<?php echo THIRDPARTY."chart.min.js"; ?>"></script>
 	<script src="<?php echo JS."resume.js"; ?>"></script>
 	<?php } ?>
 	<!-- Contact Specific -->
-	<?php if ($this->data["page"]=="contact"){ ?>
+	<?php if ($this->data["page"]=="contact"){ $parslyHeadline = "Contact Page"; $parslyURL = "http://oguzgelal.com/contact"; ?>
 	<script src="<?php echo JS."contact.js"; ?>"></script>
 	<?php } ?>
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://oguzgelal.com",
+		"@type": "TypeDeneme",
+		"headline": <?php echo $parslyHeadline; ?>,
+		"url": <?php echo $parslyURL; ?>,
+		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
+		"dateCreated": "2013-08-15T13:00:00Z",
+		"articleSection": "Programming",
+		"creator": "Alan Alexander Milne",
+		"keywords": ["statistics","zipf","internet","behavior"]
+	}
+	</script>
+
 </head>
 <body>
 	<?php
@@ -79,6 +100,24 @@
 	}
 
 	?>
+
+	<!-- !!!!! TODO : Remove Parsly !!!!! -->
+	<!-- START Parse.ly Include: Standard -->
+	<div id="parsely-root" style="display: none">
+		<div id="parsely-cfg" data-parsely-site="oguzgelal.com"></div>
+	</div>
+	<script>
+	(function(s, p, d) {
+		var h=d.location.protocol, i=p+"-"+s,
+		e=d.getElementById(i), r=d.getElementById(p+"-root"),
+		u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+		:"static."+p+".com";
+		if (e) return;
+		e = d.createElement(s); e.id = i; e.async = true;
+		e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+	})("script", "parsely", document);
+	</script>
+	<!-- END Parse.ly Include -->
 
 </body>
 </html>
