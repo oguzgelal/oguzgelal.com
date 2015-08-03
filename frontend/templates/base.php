@@ -68,7 +68,7 @@
 	<script type="application/ld+json">
 	{
 		"@context": "http://oguzgelal.com",
-		"@type": "TypeDeneme",
+		"@type": "NewsArticle",
 		"headline": <?php echo "\"".$parslyHeadline."\""; ?>,
 		"url": <?php echo "\"".$parslyURL."\""; ?>,
 		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
