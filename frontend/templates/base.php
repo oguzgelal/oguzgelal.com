@@ -45,39 +45,30 @@
 	<script src="<?php echo JS."sidebar.js"; ?>"></script>
 	<script src="<?php echo JS."fancyenter.js"; ?>"></script>
 	
-	<?php
-		$parslyHeadline = "Regular Page";
-		$parslyURL = "http://oguzgelal.com";
-	?>
 
 	<!-- Blog Specific -->
-	<?php if ($this->data["page"]=="blog"){ $parslyHeadline = "Blog Page"; $parslyURL = "http://oguzgelal.com/blog"; ?>
+	<?php if ($this->data["page"]=="blog"){ ?>
 	<script src="<?php echo JS."blog.js"; ?>"></script>
 	<?php } ?>
 	<!-- Resume Specific -->
-	<?php if ($this->data["page"]=="resume"){ $parslyHeadline = "Resume Page"; $parslyURL = "http://oguzgelal.com/cv"; ?>
+	<?php if ($this->data["page"]=="resume"){ ?>
 	<script src="<?php echo THIRDPARTY."chart.min.js"; ?>"></script>
 	<script src="<?php echo JS."resume.js"; ?>"></script>
 	<?php } ?>
 	<!-- Contact Specific -->
-	<?php if ($this->data["page"]=="contact"){ $parslyHeadline = "Contact Page"; $parslyURL = "http://oguzgelal.com/contact"; ?>
+	<?php if ($this->data["page"]=="contact"){ ?>
 	<script src="<?php echo JS."contact.js"; ?>"></script>
 	<?php } ?>
 
 
-	<script type="application/ld+json">
-	{
-		"@context": "http://oguzgelal.com",
-		"@type": "NewsArticle",
-		"headline": <?php echo "\"".$parslyHeadline."\""; ?>,
-		"url": <?php echo "\"".$parslyURL."\""; ?>,
-		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
-		"dateCreated": "2013-08-15T13:00:00Z",
-		"articleSection": "Programming",
-		"creator": "Alan Alexander Milne",
-		"keywords": ["statistics","zipf","internet","behavior"]
-	}
-	</script>
+	<meta name="parsely-title" content="<?php echo $this->data["page"]; ?> - Zipf's Law of the Internet: Explaining Online Behavior" />
+	<meta name="parsely-link" content="http://oguzgelal.com/<?php echo $this->data["page"]; ?>" />
+	<meta name="parsely-type" content="post" />
+	<meta name="parsely-image-url" content="http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png" />
+	<meta name="parsely-pub-date" content="2013-08-15T13:00:00Z" />
+	<meta name="parsely-section" content="Programming" />
+	<meta name="parsely-author" content="Oguz Gelal" />
+	<meta name="parsely-tags" content="statistics,zipf,internet,behavior" />
 
 </head>
 <body>
