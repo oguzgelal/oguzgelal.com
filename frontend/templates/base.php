@@ -60,15 +60,19 @@
 	<script src="<?php echo JS."contact.js"; ?>"></script>
 	<?php } ?>
 
-
-	<meta name="parsely-title" content="<?php echo $this->data["page"]; ?> - Zipf's Law of the Internet: Explaining Online Behavior" />
-	<meta name="parsely-link" content="http://oguzgelal.com/<?php echo $this->data["page"]; ?>" />
-	<meta name="parsely-type" content="post" />
-	<meta name="parsely-image-url" content="http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png" />
-	<meta name="parsely-pub-date" content="2013-08-15T13:00:00Z" />
-	<meta name="parsely-section" content="Programming" />
-	<meta name="parsely-author" content="Oguz Gelal" />
-	<meta name="parsely-tags" content="statistics,zipf,internet,behavior" />
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "NewsArticle",
+		"headline": "Zipf's Law of the Internet: Explaining Online Behavior",
+		"url": "http://blog.parsely.com/post/57821746552",
+		"thumbnailUrl": "http://blog.parsely.com/inline_mra670hTvL1qz4rgp.png",
+		"dateCreated": "2013-08-15T13:00:00Z",
+		"articleSection": "Programming",
+		"creator": "Alan Alexander Milne",
+		"keywords": ["statistics","zipf","internet","behavior"]
+	}
+	</script>
 
 </head>
 <body>
