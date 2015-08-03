@@ -30,6 +30,7 @@
 	$parselyPage["tags"]        = $tags;
 
 	$output = "<meta name='parsely-page' content='" . json_encode($parselyPage, JSON_HEX_APOS | JSON_HEX_QUOT) . "' />";
+	echo $output;
 	?>
 
 	<script>
