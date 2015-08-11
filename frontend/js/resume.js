@@ -44,6 +44,7 @@ var frameworks = {
 	"Slim Framework (PHP)": 98,
 	"F3 Framework (PHP)": 98,
 	"CakePHP (PHP)": 35,
+	"Laravel/Lumen (PHP)": 90,
 	"Django (Python)": 10
 };
 var programs = {
