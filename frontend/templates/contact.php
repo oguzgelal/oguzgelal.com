@@ -91,7 +91,7 @@
 				</div>
 				<!-- Paypal -->
 				<div class="data-wrapper">
-					<i class="fa fa-paypal contact-more-icon"></i>
+					<i class="fa fa-cc-paypal contact-more-icon"></i>
 					<span class="contact-more-data"><a href="https://www.paypal.me/oguzgelal" target="_new">.me/oguzgelal</a></span>
 				</div>
 
