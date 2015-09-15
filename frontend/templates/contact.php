@@ -84,16 +84,15 @@
 					<i class="fa fa-youtube contact-more-icon"></i>
 					<span class="contact-more-data"><a href="https://www.youtube.com/user/ogz279" target="_new">/user/ogz279</a></span>
 				</div>
-				<!-- Reddit 
-				<div class="data-wrapper">
-					<i class="fa fa-reddit contact-more-icon"></i>
-					<span class="contact-more-data"><a href="http://www.reddit.com/user/oguz279/" target="_new">/user/oguz279</a></span>
-				</div>
-				-->
 				<!-- Medium -->
 				<div class="data-wrapper">
 					<i class="fa fa-medium contact-more-icon"></i>
 					<span class="contact-more-data"><a href="https://medium.com/@oguzgelal" target="_new">/@oguzgelal</a></span>
+				</div>
+				<!-- Paypal -->
+				<div class="data-wrapper">
+					<i class="fa fa-paypal contact-more-icon"></i>
+					<span class="contact-more-data"><a href="https://www.paypal.me/oguzgelal" target="_new">.me/oguzgelal</a></span>
 				</div>
 
 
