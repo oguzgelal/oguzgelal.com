@@ -92,7 +92,9 @@
 			a .fa{color: @linkedin;}
 		}
 		*/
-		.sidepanel-item-tp { color: @toptal; }
+		.sidepanel-item-tp { 
+			a, a .fa { color: @toptal !important; }
+		}
 		.sidepanel-item-tp:hover {
 			background-color: @toptal;
 			a, a .fa { color: white !important; }
