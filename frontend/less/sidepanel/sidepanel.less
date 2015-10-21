@@ -1,4 +1,4 @@
-.sidepanel-toptal-icon {
+.sidepanel-toptal-icon, .sidepanel-toptal-icon-white {
 	height: 25px;
 	width: auto;
 	padding: 0;
@@ -6,7 +6,10 @@
 	vertical-align: bottom;
 	margin-right: 13px;
 }
-
+.sidepanel-toptal-icon-white {
+	position: absolute;
+	left: -999999px;
+}
 
 .sidepanel {
 	position: relative;
@@ -90,8 +93,16 @@
 		}
 		*/
 		.sidepanel-item-tp:hover {
-			background-color: white;
-			a, a .fa { color: @toptal !important; }
+			background-color: @toptal;
+			a, a .fa { color: white !important; }
+			.sidepanel-toptal-icon-white {
+				position: relative;
+				left: 0;
+			}
+			.sidepanel-toptal-icon {
+				position: absolute;
+				left: -999999px;
+			}
 		}
 		.sidepanel-item-gh:hover {
 			background-color: @github;

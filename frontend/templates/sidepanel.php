@@ -42,6 +42,7 @@ if ($this->data['sidepanel_small']){ $ismobile="mobile default_mobile"; }
 				<li class="sidepanel-item sidepanel-item-tp" title="Toptal">
 					<a href="http://www.toptal.com/resume/oguz-gelal" target="_new">
 						<img src="<?php echo IMGS."toptal_icon.png"; ?>" alt="Toptal Icon" class="sidepanel-toptal-icon">
+						<img src="<?php echo IMGS."toptal_icon_white.png"; ?>" alt="Toptal Icon" class="sidepanel-toptal-icon-white">
 						<span class="sidepanel-small-hide">Toptal</span>
 					</a>
 				</li>
