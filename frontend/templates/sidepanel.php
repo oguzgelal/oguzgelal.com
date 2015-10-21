@@ -39,8 +39,8 @@ if ($this->data['sidepanel_small']){ $ismobile="mobile default_mobile"; }
 			<hr class="sidepanel-divider">
 
 			<ul class="sidepanel-list" style="margin-top: 20px; margin-bottom: 100px;">
-				<li class="sidepanel-item sidepanel-item-gh" title="GitHub">
-					<a href="https://github.com/oguzgelal" target="_new">
+				<li class="sidepanel-item sidepanel-item-tp" title="Toptal">
+					<a href="http://www.toptal.com/resume/oguz-gelal" target="_new">
 						<img src="<?php echo IMGS."toptal_icon.png"; ?>" alt="Toptal Icon" class="sidepanel-toptal-icon">
 						<span class="sidepanel-small-hide">Toptal</span>
 					</a>
