@@ -96,9 +96,9 @@
 				</div>
 				<!-- Toptal -->
 				<div class="data-wrapper">
-					<span class="contact-more-icon contact-toptal-icon">
+					<div class="contact-more-icon contact-toptal-cont">
 						<img src="<?php echo IMGS."toptal_icon_white.png"; ?>" alt="Toptal Icon" class="contact-toptal-icon">	
-					</span>
+					</div>
 					<span class="contact-more-data"><a href="http://www.toptal.com/resume/oguz-gelal" target="_new">/resume/oguz-gelal</a></span>
 				</div>
 
