@@ -20,7 +20,7 @@ var programming = {
 	"Swift": 50,
 	"Verilog": 40,
 	"F#": 60,
-	"SQL": 85,
+	"SQL": 95,
 	"Processing": 95,
 	"PHP": 99,
 	"Perl": 30
@@ -37,9 +37,9 @@ var tools = {
 };
 var frameworks = {
 	"BackboneJS (JS)": 95,
-	"AngularJS (JS)": 45,
+	"AngularJS (JS)": 95,
 	"MeteorJS (JS)": 97,
-	"JSP&JSF (Java)": 60,
+	"JSP&JSF (Java)": 50,
 	"ACM (Java)": 70,
 	"Slim Framework (PHP)": 98,
 	"F3 Framework (PHP)": 98,
