@@ -54,6 +54,13 @@
 					<i class="fa fa-github contact-more-icon"></i>
 					<span class="contact-more-data"><a href="http://github.com/oguzgelal" target="_new">/oguzgelal</a></span>
 				</div>
+				<!-- Toptal -->
+				<div class="data-wrapper">
+					<div class="contact-more-icon contact-toptal-cont">
+						<img src="<?php echo IMGS."toptal_icon_white.png"; ?>" alt="Toptal Icon" class="contact-toptal-icon">	
+					</div>
+					<span class="contact-more-data"><a href="http://www.toptal.com/resume/oguz-gelal" target="_new">/resume/oguz-gelal</a></span>
+				</div>
 				<!-- Facebook -->
 				<div class="data-wrapper">
 					<i class="fa fa-facebook contact-more-icon"></i>
@@ -93,13 +100,6 @@
 				<div class="data-wrapper">
 					<i class="fa fa-cc-paypal contact-more-icon"></i>
 					<span class="contact-more-data"><a href="https://www.paypal.me/oguzgelal" target="_new">.me/oguzgelal</a></span>
-				</div>
-				<!-- Toptal -->
-				<div class="data-wrapper">
-					<div class="contact-more-icon contact-toptal-cont">
-						<img src="<?php echo IMGS."toptal_icon_white.png"; ?>" alt="Toptal Icon" class="contact-toptal-icon">	
-					</div>
-					<span class="contact-more-data"><a href="http://www.toptal.com/resume/oguz-gelal" target="_new">/resume/oguz-gelal</a></span>
 				</div>
 
 
