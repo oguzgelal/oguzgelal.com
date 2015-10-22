@@ -23,7 +23,7 @@
 				I was born in Izmir and moved to Istanbul for <span class="tooltip tooltip-highlight" title="Ozyegin University">college</span>. 
 				I had many work experiences and took quite a few responsibilities, you can find more about those <a href="/cv" target="_self">here</a>.
 				My field of interests are web, computer networks and <a href='http://en.wikipedia.org/wiki/Semantic_Web' target='_new'>semantic web technologies</a>. 
-				As for my professional career, I work as a freelance web developer (frontend and back-end) at Toptal. <a href="http://www.toptal.com/resume/oguz-gelal" target="_new">Click here</a> to visit my Toptal profile here.
+				As for my professional career, I work at <a href="http://webrazzi.com" target="_new">Webrazzi</a> and as a freelance web developer (frontend and back-end) at Toptal. <a href="http://www.toptal.com/resume/oguz-gelal" target="_new">Click here</a> to visit my Toptal profile.
 				Other than that, I have some <a href="/portfolio" target="_self">ongoing projects</a> too. 
 				If you have any questions or comments, please don't hesitate to <a href="/contact" target="_self">contact me</a> and I'll 
 				be glad to get back to you. Thanks for visiting my website.
