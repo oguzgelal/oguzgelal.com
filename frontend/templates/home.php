@@ -11,7 +11,7 @@
 		<div class="homepage-row homepage-infotiles fancy-enter-bounce" style="margin-top: 30px;">
 			<p>
 				I'm a 
-				<span class="tooltip" title="Yeah, of course this is dynamic."> <?php echo date("Y")-1993; ?> </span> year old programmer, entrepreneur, geek and an engineer at <a href="http://www.toptal.com/resume/oguz-gelal" target="_new">Toptal</a>. 
+				<span class="tooltip" title="Yeah, of course this is dynamic."> <?php echo date("Y")-1993; ?> </span> year old programmer, entrepreneur, geek and an engineer at <a href="http://www.toptal.com/resume/oguz-gelal/#accept-just-10x-programmers-now" target="_new">Toptal</a>. 
 				I enjoy watching movies <span class="desc-comment">(mostly comedy and horror)</span> and reading books. 
 				My favorites are as follows: <a href="http://www.imdb.com/title/tt0150742/" target="_new">Godfather Triology</a> as movie, <a href="https://en.wikipedia.org/wiki/George_Carlin" target="_new">George Carlin</a> as a comedian, <a href="http://www.imdb.com/title/tt0108778/" target="_new">Friends</a> and <a href="http://www.imdb.com/title/tt0182576/" target="_new">Family Guy</a> as TV shows, <a href="https://en.wikipedia.org/wiki/George_Orwell" target="_new">George Orwell</a> as author.
 				I love music, especially classical rock. I don't have a favorite band though.
@@ -23,7 +23,7 @@
 				I was born in Izmir and moved to Istanbul for <span class="tooltip tooltip-highlight" title="Ozyegin University">college</span>. 
 				I had many work experiences and took quite a few responsibilities, you can find more about those <a href="/cv" target="_self">here</a>.
 				My field of interests are web, computer networks and <a href='http://en.wikipedia.org/wiki/Semantic_Web' target='_new'>semantic web technologies</a>. 
-				As for my professional career, I work at <a href="http://webrazzi.com" target="_new">Webrazzi</a> and as a freelance web developer (frontend and back-end) at Toptal. <a href="http://www.toptal.com/resume/oguz-gelal" target="_new">Click here</a> to visit my Toptal profile.
+				As for my professional career, I work as a freelance web developer (frontend and back-end) at <a href="http://www.toptal.com/#accept-just-10x-programmers-now" target="_new">Toptal</a>. <a href="http://www.toptal.com/resume/oguz-gelal/#accept-just-10x-programmers-now" target="_new">Click here</a> to visit my Toptal profile.
 				Other than that, I have some <a href="/portfolio" target="_self">ongoing projects</a> too. 
 				If you have any questions or comments, please don't hesitate to <a href="/contact" target="_self">contact me</a> and I'll 
 				be glad to get back to you. Thanks for visiting my website.
