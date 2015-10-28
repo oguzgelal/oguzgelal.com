@@ -11,7 +11,7 @@
 		<div class="homepage-row homepage-infotiles fancy-enter-bounce" style="margin-top: 30px;">
 			<p>
 				I'm a 
-				<span class="tooltip" title="Yeah, of course this is dynamic."> <?php echo date("Y")-1993; ?> </span> year old programmer, entrepreneur, geek and an engineer at <a href="http://www.toptal.com/resume/oguz-gelal/#accept-just-10x-programmers-now" target="_new">Toptal</a>. 
+				<span class="tooltip" title="Yeah, of course this is dynamic."> <?php echo date("Y")-1993; ?> </span> year old programmer, entrepreneur, geek and an engineer at <a href="http://www.toptal.com/#accept-just-10x-programmers-now" target="_new">Toptal</a>. 
 				I enjoy watching movies <span class="desc-comment">(mostly comedy and horror)</span> and reading books. 
 				My favorites are as follows: <a href="http://www.imdb.com/title/tt0150742/" target="_new">Godfather Triology</a> as movie, <a href="https://en.wikipedia.org/wiki/George_Carlin" target="_new">George Carlin</a> as a comedian, <a href="http://www.imdb.com/title/tt0108778/" target="_new">Friends</a> and <a href="http://www.imdb.com/title/tt0182576/" target="_new">Family Guy</a> as TV shows, <a href="https://en.wikipedia.org/wiki/George_Orwell" target="_new">George Orwell</a> as author.
 				I love music, especially classical rock. I don't have a favorite band though.
