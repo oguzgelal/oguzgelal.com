@@ -36,16 +36,16 @@ var tools = {
 	"Vim": 70
 };
 var frameworks = {
-	"BackboneJS (JS)": 95,
-	"AngularJS (JS)": 95,
+	"BackboneJS (JS)": 92,
+	"AngularJS (JS)": 98,
 	"MeteorJS (JS)": 97,
+	"Cordova / PhoneGap": 98,
+	"Ionic Framework": 99,
 	"JSP&JSF (Java)": 50,
 	"ACM (Java)": 70,
 	"Slim Framework (PHP)": 98,
 	"F3 Framework (PHP)": 98,
-	"CakePHP (PHP)": 35,
-	"Laravel/Lumen (PHP)": 90,
-	"Django (Python)": 10
+	"Laravel/Lumen (PHP)": 90
 };
 var programs = {
 	"Adobe Photoshop": 80,
@@ -59,7 +59,7 @@ var programs = {
 	"Visual Studio": 60
 };
 var languages = {
-	"English": 90,
+	"English": 97,
 	"Turkish": 99,
 	"Italian": 15,
 	"Spanish": 12,
