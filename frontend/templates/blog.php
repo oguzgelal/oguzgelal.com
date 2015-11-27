@@ -13,6 +13,9 @@
 				$timestamp = $date->getTimestamp();
 				$readableTime = date("M jS, Y", $timestamp);
 
+				$marginTop = -20;
+				if (isset($post['margintop'])){ $marginTop = $post['margintop']; }
+
 				$postLink = "#";
 				$postTarget = "_self";
 				if (isset($post['out_link']) && $post['out_link']!=""){
@@ -28,7 +31,7 @@
 				if(isset($post['out_imgurl']) && $post['out_imgurl']!=""){ $postImgurl = $post['out_imgurl']; }
 
 				?>
-				<div class="blog-post" id="<?php echo $post['id']; ?>" data-img="<?php echo $postImgurl; ?>">
+				<div class="blog-post" id="<?php echo $post['id']; ?>" data-img="<?php echo $postImgurl; ?>" data-margintop="<?php echo $marginTop; ?>">
 					<a href="<?php echo $postLink; ?>" target="<?php echo $postTarget; ?>">
 						<div class="blog-post-hover">
 							<div class="blog-post-lang">
