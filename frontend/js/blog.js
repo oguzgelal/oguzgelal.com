@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var img = $("<img />");
 		img.addClass('blog-post-bgimg');
 		img.attr('src', imgsrc);
-		img.css('margin-top', imgmtop+'px');
+		img.css('margin-top', imgmtop+'%');
 		img.data('append-to', postid);
 		img.load(function() {
 			if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) { console.log("broken image"); }
