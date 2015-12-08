@@ -26,7 +26,7 @@
 				As for my professional career, I work as a freelance web developer (frontend and back-end) at <a href="http://www.toptal.com/#accept-just-10x-programmers-now" target="_new">Toptal</a>. <a href="http://www.toptal.com/resume/oguz-gelal/#accept-just-10x-programmers-now" target="_new">Click here</a> to visit my Toptal profile.
 				Other than that, I have some <a href="/portfolio" target="_self">ongoing projects</a> too. 
 				If you have any questions or comments, please don't hesitate to <a href="/contact" target="_self">contact me</a> and I'll 
-				be glad to get back to you. Thanks for visiting my website.
+				be glad to get back to you. A final shout-out, thank you <a href="https://www.browserstack.com" target="_new">BrowserStack</a> for sponsoring this content. Thank you visiting my website.
 			</p>
 		</div>
 	</div>
