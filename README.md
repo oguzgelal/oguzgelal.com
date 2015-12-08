@@ -18,6 +18,7 @@ This is the source codes of my website, *still under development*. Here are some
 *  <a href="http://www.chartjs.org/" target="_new">ChartJS</a> (Graphing Engine)
 *  <a href="http://t4t5.github.io/sweetalert/" target="_new">SweetAlert</a>
 
+A special thanks to <a href=""><img src="http://blog.verticalresponse.com/wp-content/uploads/2013/05/BrowserStackLogo.png" style="height: 40px; width: auto;"></a> for all the contributions to open-source projects.
 
 Want to use the codes ?
 --------------------
