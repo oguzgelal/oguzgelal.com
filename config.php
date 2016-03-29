@@ -34,6 +34,6 @@ if (LOCAL){ define( "DOMAIN", "localhost:8888" ); }
 else{ define( "DOMAIN", "oguzgelal.com" ); }
 
 # OTHER
-define("RESUME", FILES."OguzGelalCV-5-1.pdf");
-define("RESUME_VERSION", "5.1");
+define("RESUME", FILES."OguzGelalCV-5-2.pdf");
+define("RESUME_VERSION", "5.2");
 
